@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Thing A Week Summer 2020"
-date:   2020-05-11 14:55 +0100
+date:   2020-05-15 14:55 +0100
 tags: [thing a week]
 permalink: /blog/:title.html
 ---
