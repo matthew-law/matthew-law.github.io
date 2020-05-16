@@ -1,8 +1,8 @@
 ---
-title: Tags
+title: tags
 permalink: /tags/
 layout: page
-excerpt: Sorted article by tags.
+excerpt: Articles sorted by tags.
 ---
 
 {% for tag in site.tags %} {% capture name %}{{ tag | first }}{% endcapture %}
