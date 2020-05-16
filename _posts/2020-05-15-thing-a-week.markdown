@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "A Thing A Week Summer 2020"
+date:   2020-05-11 14:55 +0100
+tags: [thing a week]
+permalink: /blog/:title.html
+---
+Summer is cancelled, I’ve finished the last assessment of my degree, and I find myself with a lot of time but little to be doing.
+This is at once a great opportunity, and a great danger. In many ways I am in a position that me-of-a-few-months-ago would have greatly envied: finally freed from the shackles of endless essays and assessments, I have the chance to bring to fruition all the random ideas for projects for which I’ve never previously had the time. But part of me can’t help but feel a bit of a sense of dread, fearful of the prospect of reaching September with nothing to show for the thousands of available hours I might by that point have frittered away scrolling through nugatory social media and/or binge watching YouTube (or indeed playing the piano, using [Duolingo](http://duome.eu/NerdyMatthew), or reading a book. In past summers I have had sunny holidays and less-sunny jobs to mostly allay this eventuality, but for lack of a clear (set of) goal(s) my fear of this possibility has reached new high water mark and I feel the need to give myself Something To Do. 
+#### To this end, every week, starting today, I will be producing some sort of Thing, and posting the results to this newly established blog. 
+
+I am acutely aware from past experience that when faced with a deadline I am capable of periods of prodigious productivity, but without an immediate motivation I often lapse into profitless procrastination. I have actually been meaning to do this since before Coronavirus forced me back home from uni, halfway through March, but true to form I’ve successfully put it off until after the last of my university assignments has been submitted and no excuses for postponement remain. Hopefully my imposition of a weekly due date will help spur some form of what Johnny Harris calls ‘[excited accountability](https://youtu.be/OwqVtZn5df8)’ : a productive mix of intrinsic desire to do something and extrinsic pressure to do it. The idea of a weekly deadline also takes inspiration from Jonathan Coulton’s *[Thing a Week](https://www.jonathancoulton.com/primer/thing-a-week/)* and Michelle Zauner and Rachel Gagliardi’s (daily) *[June](https://rachelandmichelledojune.tumblr.com/archive)*, both songwriting projects aimed at forcing out productivity (/creativity) on a regular basis.
+
+It remains to be seen how long this experiment will last; indeed it remains to be seen how many—if not most—things in the world might turn out over the next few months (#unprecedented). Tune in to find out!
+
+The first such weekly project is this website, lovingly crafted by me, unleashed upon the world today (although likely almost entirely without readers at this point), and very much a work in progress. In the interest of filling this incipient site with a bit more Content™, I’ve documented the technical details on a separate post.
