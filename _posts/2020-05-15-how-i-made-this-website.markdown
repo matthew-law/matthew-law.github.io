@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How I Made This Website"
-date:   2020-05-11 18:24:07 +0100
+date:   2020-05-15 18:24:07 +0100
 tags: [thing a week, web design]
 permalink: /blog/:title.html
 ---
