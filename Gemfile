@@ -25,7 +25,7 @@ group :jekyll_plugins do
   gem 'jekyll-compose'
   gem 'jekyll-postfiles', '~> 3.0'
   # gem 'rouge', '1.10.1'
-  gem "jekyll-youtube"
+  # gem "jekyll-youtube" didn't work with GH pages
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
