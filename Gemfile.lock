@@ -191,6 +191,8 @@ GEM
       jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    jekyll-youtube (1.0.0)
+      jekyll
     jemoji (0.11.1)
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
@@ -249,6 +251,7 @@ DEPENDENCIES
   github-pages
   jekyll-compose
   jekyll-postfiles (~> 3.0)
+  jekyll-youtube
 
 BUNDLED WITH
    2.1.4
