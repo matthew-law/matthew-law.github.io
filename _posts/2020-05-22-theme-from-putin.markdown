@@ -17,10 +17,6 @@ This is the first time I've tried transcribing anything like this since doing co
 
 From this I pieced together as best I could a complete version of the theme, performed below (please forgive my lockdown (lack of) haircut):
 
-<!-- 
-doesn't work with gh pages rip
-{% youtube "https://www.youtube.com/watch?v=NjYi60wYq6k" %} -->
-
 <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/NjYi60wYq6k" frameborder="0" allowfullscreen=""></iframe>
 
 The sound was recorded through GarageBand (from my piano's MIDI out) so if it sounds weird or is a bit out of sync with the video that's why. 
