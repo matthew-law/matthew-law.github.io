@@ -6,8 +6,6 @@ tags: [thing a week, piano]
 permalink: /blog/:title.html
 ---
 
-([Thing A Week]({% post_url 2020-05-15-thing-a-week %}) #2)
-
 A few weeks ago I listened to *[Putin: Prisoner of Power](https://www.audible.co.uk/pd/Putin-Prisoner-of-Power-Audiobook/B07W4WVNXK)*, a podcast on Audible by Misha Glenny about (surprisingly enough) Vladimir Putin's rise to power and reign. It's excellently produced, and throughout employs a remarkably catchy piano theme, which has been stuck in my head since I first heard it. All my searches for further information about the theme (its name, composer, etc) have thus far been fruitless, so I worked it out on piano by ear and had a go at transcribing it myself (the final score is at the bottom of this post).
 
 This is the first time I've tried transcribing anything like this since doing composition coursework for GCSE music many years ago, so the process took a bit of getting used to (I used [Musescore](https://musescore.org/), which worked well for everything I needed to do). The task was somewhat complicated by the fact that the theme only ever appears in snippets at different points throughout the podcast, and is often semi-obscured by speaking. To get around this, I skimmed through the podcast's seven episodes to find each instance of the theme and its variations, then assembled these in GarageBand to try and salvage all the possible speech-free sections (see below). 

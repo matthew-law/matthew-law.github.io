@@ -5,7 +5,6 @@ date:   2020-05-15 18:24:07 +0100
 tags: [thing a week, web design]
 permalink: /blog/:title.html
 ---
-([Thing A Week]({% post_url 2020-05-15-thing-a-week %}) #1)
 
 This post has a bit more technical information about how I went about making this site, but it is definitely not a how-to guide – I made the site by piecing together information and trying things to see what worked and what did not, so I am by no means an authority on this.
 
