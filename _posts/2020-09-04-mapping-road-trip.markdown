@@ -15,7 +15,7 @@ In the absence of any foreseeable holiday (thanks, coronavirus!), I took the opp
 
 For unnecessarily higher res images:
 - [10000 × 7064 PNG (22.4 MB)]({{ site.baseurl }}{% link /assets/img/poster export 10000px.png %})
-- Full size SVG (size MB)
+- [Full size SVG (90.4 MB – may take a while to load)]({{ site.baseurl }}{% link /assets/img/poster.svg %})
 
 When printed nicely as an A1 poster it also served as an excellent (belated) birthday present for the two friends I travelled with. This specification (A1 = 594mm × 841mm = eight A4 sheets) informed the design, and also presented a bit of a novel challenge, since this was the first time I had designed something this large. Size isn't really something I give much conscious thought to when making something that will be either on a screen, or A4/A3 size, but when the output gets this big I found that I can struggle to visualise how the final product will look, especially whether text and images will be too small/large once at the intended scale.
 
