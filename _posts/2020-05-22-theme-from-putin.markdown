@@ -2,7 +2,7 @@
 layout: post
 title:  "Theme from Putin: Prisoner of Power"
 date:   2020-05-22 12:00:00 +0100
-tags: [thing a week, piano]
+tags: [piano]
 permalink: /blog/:title.html
 ---
 
@@ -12,6 +12,9 @@ This is the first time I've tried transcribing anything like this since doing co
 
 
 ![Piecing together in GarageBand](/assets/img/garageband.png){:class="img-responsive"}
+<!-- 
+I think the {:class="img-responsive"}  might be redundant but can't remember so yolo
+-->
 
 From this I pieced together as best I could a complete version of the theme, performed below (please forgive my lockdown (lack of) haircut):
 
