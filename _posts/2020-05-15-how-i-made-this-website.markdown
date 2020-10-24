@@ -14,6 +14,6 @@ The site is based on the [Klisé](https://github.com/piharpi) theme for Jekyll b
 
 Everything is hosted for free on [GitHub pages](http://pages.github.com/), which integrates nicely with Jekyll.
 
-The favicon is just the Ⓜ️  emoji (for Matthew ofc) from Twitter's open source [Twemoji](https://twemoji.twitter.com/) emojis, and I used [realfavicongenerator.net](https://realfavicongenerator.net/) to quickly generate the necessary files from the [original svg](https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/24c2.svg).
+The favicon is just the Ⓜ️&#160;emoji (for Matthew ofc) from Twitter's open source [Twemoji](https://twemoji.twitter.com/) emojis, and I used [realfavicongenerator.net](https://realfavicongenerator.net/) to quickly generate the necessary files from the [original svg](https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/24c2.svg).
 
 At the moment I'm using [Visual Studio Code](https://code.visualstudio.com/) as my IDE, but I'm still in the early experimentation stage of things, so can't say whether or not I'll stick with this or start using a WYSIWYG Markdown editor instead.
