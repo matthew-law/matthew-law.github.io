@@ -28,8 +28,9 @@ group :jekyll_plugins do
   # gem "jekyll-youtube" didn't work with GH pages
 end
 
-# patch vulnerability
+# patch vulnerabilities
 gem "activesupport", ">= 6.0.3.1"
+gem "kramdown", ">= 2.3.1"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
