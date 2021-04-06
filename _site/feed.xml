@@ -1,4 +1,314 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-GB" /><updated>2021-04-05T02:05:48+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matthew Law</title><subtitle>all about me yay</subtitle><author><name>Matthew Law</name></author><entry><title type="html">Attempting the #30DayMapChallenge</title><link href="http://localhost:4000/blog/30daymapchallenge.html" rel="alternate" type="text/html" title="Attempting the #30DayMapChallenge" /><published>2020-10-31T11:00:00+00:00</published><updated>2020-10-31T11:00:00+00:00</updated><id>http://localhost:4000/blog/30daymapchallenge</id><content type="html" xml:base="http://localhost:4000/blog/30daymapchallenge.html">&lt;h3 id=&quot;i-am-going-to-attempt-the-30daymapchallenge&quot;&gt;I am going to attempt the &lt;a href=&quot;https://twitter.com/hashtag/30DayMapChallenge&quot;&gt;#30DayMapChallenge&lt;/a&gt;.&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-GB" /><updated>2021-04-06T20:50:35+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matthew Law</title><subtitle>all about me yay</subtitle><author><name>Matthew Law</name></author><entry><title type="html">Completing the #30DayMapChallenge</title><link href="http://localhost:4000/blog/30daymapchallenge-2020.html" rel="alternate" type="text/html" title="Completing the #30DayMapChallenge" /><published>2020-12-01T11:00:00+00:00</published><updated>2020-12-01T11:00:00+00:00</updated><id>http://localhost:4000/blog/30daymapchallenge-2020</id><content type="html" xml:base="http://localhost:4000/blog/30daymapchallenge-2020.html">&lt;p&gt;As &lt;a href=&quot;/blog/30daymapchallenge.html&quot;&gt;promised&lt;/a&gt;, over the course of November I attempted to produce (and &lt;a href=&quot;https://twitter.com/Iawmatthew&quot;&gt;tweet&lt;/a&gt;) a map a day as part of the &lt;a href=&quot;https://twitter.com/hashtag/30DayMapChallenge&quot;&gt;#30DayMapChallenge&lt;/a&gt;. I managed 22 out of the 30 days, the results of which are below. Sharing these comes with the emphatic caveat that each was produced in a day (indeed usually in only an hour or two), and so there are many elements I do not like and would change if I had more time. Maybe I’ll go back and add to or otherwise improve some of them at a later date.&lt;/p&gt;
+
+&lt;p&gt;Over the course of the challenge I tried to document the data, tools, and methods I used, all of which is below alongside the maps. Mostly I stuck to QGIS for the mapmaking, matched with an embarrassingly frequent use of PowerPoint for final labelling/composition, and some occasional use of R to wrangle data before getting it into QGIS and make a few gifs at the end of the month.&lt;/p&gt;
+
+&lt;p&gt;Click below to go to a specific topic’s map, or scroll down to see the full set. Most of the images are nice and big so feel free to open each in a new tab should you want to admire them in full detail!&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#points&quot; id=&quot;markdown-toc-points&quot;&gt;Points&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#lines&quot; id=&quot;markdown-toc-lines&quot;&gt;Lines&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#polygons&quot; id=&quot;markdown-toc-polygons&quot;&gt;Polygons&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#hexagons&quot; id=&quot;markdown-toc-hexagons&quot;&gt;Hexagons&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#blue&quot; id=&quot;markdown-toc-blue&quot;&gt;Blue&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#red&quot; id=&quot;markdown-toc-red&quot;&gt;Red&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#green&quot; id=&quot;markdown-toc-green&quot;&gt;Green&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#yellow&quot; id=&quot;markdown-toc-yellow&quot;&gt;Yellow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#monochrome&quot; id=&quot;markdown-toc-monochrome&quot;&gt;Monochrome&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#grid&quot; id=&quot;markdown-toc-grid&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#3d&quot; id=&quot;markdown-toc-3d&quot;&gt;3D&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#map-not-made-with-gis-software&quot; id=&quot;markdown-toc-map-not-made-with-gis-software&quot;&gt;Map not made with GIS software&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#raster&quot; id=&quot;markdown-toc-raster&quot;&gt;Raster&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#climate-change&quot; id=&quot;markdown-toc-climate-change&quot;&gt;Climate change&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#connections&quot; id=&quot;markdown-toc-connections&quot;&gt;Connections&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#historical-map&quot; id=&quot;markdown-toc-historical-map&quot;&gt;Historical map&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#null&quot; id=&quot;markdown-toc-null&quot;&gt;NULL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#population&quot; id=&quot;markdown-toc-population&quot;&gt;Population&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#water&quot; id=&quot;markdown-toc-water&quot;&gt;Water&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#landuse&quot; id=&quot;markdown-toc-landuse&quot;&gt;Landuse&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#elevation-andor-map-with-a-new-tool&quot; id=&quot;markdown-toc-elevation-andor-map-with-a-new-tool&quot;&gt;Elevation and/or Map with a New Tool&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#a-map&quot; id=&quot;markdown-toc-a-map&quot;&gt;A map&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;points&quot;&gt;Points&lt;/h1&gt;
+
+&lt;p&gt;Population in England and Wales, with a point for every ~10 people.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/points.png&quot; alt=&quot;points&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: Output Area populations from the 2011 UK census (I can’t remember exactly where I got this from now, but it’s likely either the &lt;a href=&quot;https://www.ons.gov.uk/&quot;&gt;ONS website&lt;/a&gt; or &lt;a href=&quot;https://www.nomisweb.co.uk/&quot;&gt;Nomis&lt;/a&gt;.&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: roughly based on &lt;a href=&quot;https://www.maartenlambrechts.com/2018/02/13/one-person-one-dot-maps-and-how-to-make-them.html&quot;&gt;this tutorial&lt;/a&gt; by Maarten Lambrechts.&lt;/p&gt;
+
+&lt;h1 id=&quot;lines&quot;&gt;Lines&lt;/h1&gt;
+
+&lt;p&gt;All the roads in Great Britain&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/lines-GB.png&quot; alt=&quot;lines&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A closer view of of dense London&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/lines-London.png&quot; alt=&quot;yet more lines&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A nice chunk of sparser Scotland by means of contrast&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/lines-Scotland.png&quot; alt=&quot;will these lines ever stop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: Ordnance Survey’s fantastic &lt;a href=&quot;https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack&quot;&gt;Open Zoomstack&lt;/a&gt; geopackage (this will be a recurring theme this month)&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS&lt;br /&gt;
+&lt;strong&gt;Style inspiration&lt;/strong&gt;: the book ‘QGIS Map Design’ by Anita Graser and Gretchen Peterson, specifically the bit about colour blending&lt;/p&gt;
+
+&lt;h1 id=&quot;polygons&quot;&gt;Polygons&lt;/h1&gt;
+
+&lt;p&gt;Experimenting with carving up Great Britain in different ways (and styling at random):&lt;br /&gt;
+a) ceremonial counties&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/polygons-ceremonial-counties.png&quot; alt=&quot;polygons-ceremonial-counties&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;b) voronoi polygons based on county towns of said counties&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/polygons-voronoi.png&quot; alt=&quot;polygons-voronoi&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;c) parliamentary constituencies&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/polygons-westminster.png&quot; alt=&quot;polygons-westminster&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;d) European NUTS 1 regions
+&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/polygons-nuts-1.png&quot; alt=&quot;polygons-nuts-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: Ordnance Survey’s open &lt;a href=&quot;https://www.ordnancesurvey.co.uk/business-government/products/boundaryline&quot;&gt;Boundary-Line&lt;/a&gt; data and manually and somewhat haphazardly plotted county towns&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS&lt;br /&gt;
+&lt;strong&gt;Styling&lt;/strong&gt;: These maps were basically just excuses to play with Topi Tjukanov’s &lt;a href=&quot;https://github.com/tjukanovt/qgis_styles&quot;&gt;qlimt and qartoon styles&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;hexagons&quot;&gt;Hexagons&lt;/h1&gt;
+
+&lt;p&gt;Average monthly daytime land surface temperature, November 2019 to October 2020&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/hexagons.gif&quot; alt=&quot;hexagons are allegedly the bestagons&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: &lt;a href=&quot;https://lpdaac.usgs.gov/products/mod11c3v006/&quot;&gt;Land Surface Temperature&lt;/a&gt; from the MODIS sensor on NASA’s Terra and Aqua satellites&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS, PowerPoint for labels, &lt;a href=&quot;http://ezgif.com&quot;&gt;ezgif.com&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: the hex bin polygons take the mean value of all valid pixels in the underlying surface temperature raster&lt;/p&gt;
+
+&lt;h1 id=&quot;blue&quot;&gt;Blue&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/blue.png&quot; alt=&quot;Alexa, play Eiffel 65&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: &lt;a href=&quot;http://ghdx.healthdata.org/gbd-results-tool&quot;&gt;Global Burden of Disease Study&lt;/a&gt; – I was surprised that subnational data was available for Kenya, Indonesia, and Brazil but not for any of the EU. I also haven’t looked into the methodology so would be cautious in drawing any conclusions from this kind of global dataset&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: R for data wrangling, QGIS for mapping, PowerPoint for labelling – the part that took the longest was finding and downloading and subsetting and reshaping the data as required before actually mapping it&lt;br /&gt;
+&lt;strong&gt;Design inspiration&lt;/strong&gt;: &lt;a href=&quot;https://ourworldindata.org/&quot;&gt;Our World in Data&lt;/a&gt;’s global-scale choropleths (&lt;a href=&quot;https://ourworldindata.org/grapher/life-expectancy?tab=map&quot;&gt;for example&lt;/a&gt; – I stole the map projection and almost all the other design elements from these)&lt;/p&gt;
+
+&lt;h1 id=&quot;red&quot;&gt;Red&lt;/h1&gt;
+
+&lt;p&gt;Distance to the nearest working McDonald’s ice cream machine, as of earlier this afternoon (red: near, yellow: not so near, red dots: working machine, lots of red dots on top of each other: white dots, ⚠: broken machine)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/red.png&quot; alt=&quot;mcbroken.com renews my faith in the value of web mapping&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: the sublime &lt;a href=&quot;http://mcbroken.com&quot;&gt;mcbroken.com&lt;/a&gt; – I love the data for this even if the map itself is very ugly&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: buffer around the locations with working ice cream machines&lt;br /&gt;
+&lt;strong&gt;Styling&lt;/strong&gt;: I was trying to go for a McDonald’s red/yellow combo but the final result gives off the aura of some kind of fast food induced hellscape&lt;/p&gt;
+
+&lt;h1 id=&quot;green&quot;&gt;Green&lt;/h1&gt;
+
+&lt;p&gt;A map of Cambridge’s greenbelt, mapped from one of the little rural enclaves with a view of said belt from my window&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/green.png&quot; alt=&quot;my best map&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: greenbelt via the (now former) &lt;a href=&quot;https://data.gov.uk/dataset/f7f5e3a4-05a6-41f0-bc66-a36df6708fe0/dept-for-communities-and-local-government-inspire-ogc-wfs-service&quot;&gt;Department for Communities and Local Government INSPIRE OGC WFS Service&lt;/a&gt;, everything else from OS &lt;a href=&quot;https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack&quot;&gt;Open Zoomstack&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS, making use of the ability to combine multiple symbologies (namely shapeburst, striped fill, and outline for the greenbelt itself)&lt;/p&gt;
+
+&lt;p&gt;I think this is probably my favourite of the maps I made over the course of the month.&lt;/p&gt;
+
+&lt;h1 id=&quot;yellow&quot;&gt;Yellow&lt;/h1&gt;
+
+&lt;p&gt;Basically just the opposite of the &lt;a href=&quot;#blue&quot;&gt;Blue&lt;/a&gt; map&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/yellow.png&quot; alt=&quot;Alexa, play REM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: &lt;a href=&quot;http://worldhappiness.report&quot;&gt;World Happiness Report&lt;/a&gt; 2020 (specifically, that in Figure 2.1) – can’t say I’ve given much attention to the methodology so I don’t think a dose of scepticism would go amiss. As with the depression map, lots of time was taken trying to get the data into the right format, especially matching countries named slightly different things in the data being mapped vs the shapefile with the country outlines&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: R for data wrangling, QGIS for mapping, PowerPoint for labelling&lt;/p&gt;
+
+&lt;h1 id=&quot;monochrome&quot;&gt;Monochrome&lt;/h1&gt;
+
+&lt;p&gt;Buildings in London, coloured by height&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/monochrome.png&quot; alt=&quot;mono = one, chrome = chrome&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: London building heights from &lt;a href=&quot;https://www.emu-analytics.com/products/datapacks.php&quot;&gt;Emu Analytics&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS, GIMP to colour the greyscale output (not that I couldn’t have done that in QGIS, I just wanted to play around with different colourings more easily)&lt;/p&gt;
+
+&lt;p&gt;I find maps of building footprints a) visually pleasing (especially in dense/interestingly developed cities) and b) quite a nice way of getting a sense of the morphology of a city&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;: it’s interesting seeing the difference in both height and density north and south of the Thames in a way you can’t quite perceive looking at (eg) Google Maps or a London A-Z. I also love being able to see the shape of something (eg the Thames, Great Britain) by either the negative space around certain features (eg buildings) or the aggregate of certain features (eg roads), which I suppose feeds into both a) and b).&lt;/p&gt;
+
+&lt;p&gt;At the risk of another unnecessary list, making the map made me realise a) how much I usually rely on colour (even when only trying to map one variable) and b) the importance of classification in choropleth maps (or similar): if you use equal intervals, almost everything save a few skyscrapers gets pushed down to the lowest bin, but if you use quantiles you can’t differentiate those few extreme tall buildings from the others which may be half their height but are grouped together, so it takes some experimentation to get a colour mapping which manages to show the variation satisfactorily. Here the buildings are classified in 16 classes using the Jenks natural breaks classification (based on each building’s maximum height).&lt;/p&gt;
+
+&lt;h1 id=&quot;grid&quot;&gt;Grid&lt;/h1&gt;
+
+&lt;p&gt;England/Wales gridded population&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/grid.png&quot; alt=&quot;grid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: Output Area populations from the 2011 UK census (I can’t remember exactly where I got this from now, but it’s likely either the &lt;a href=&quot;https://www.ons.gov.uk/&quot;&gt;ONS website&lt;/a&gt; or &lt;a href=&quot;https://www.nomisweb.co.uk/&quot;&gt;Nomis&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS – I was going to do it in R based on &lt;a href=&quot;https://jschoeley.github.io/2018/06/30/bubble-grid-map.html&quot;&gt;this code&lt;/a&gt; by Jonas Schöley but swiftly realised it would be quicker to do so in QGIS, and proceeded to do so&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: (probably much more convoluted than necessary) – generate points per polygon (OA) based on population (ie create the ‘Points’ map), generate grid, count points in grid polygon, grid cells mapped as points with their size based on the point count^0.4&lt;/p&gt;
+
+&lt;h1 id=&quot;3d&quot;&gt;3D&lt;/h1&gt;
+
+&lt;p&gt;Population in England and Wales mapped to height (and also colour for good measure)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/3D.png&quot; alt=&quot;now in 3D&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: Output Area populations from the 2011 UK census (I can’t remember exactly where I got this from now, but it’s likely either the &lt;a href=&quot;https://www.ons.gov.uk/&quot;&gt;ONS website&lt;/a&gt; or &lt;a href=&quot;https://www.nomisweb.co.uk/&quot;&gt;Nomis&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: (probably much more convoluted than necessary) – generate points per polygon (OA) based on population (ie create the ‘Points’ map), generate grid, count points in grid polygon, plot height and coclour based on a Jenks natural breaks classification with 15 classes&lt;/p&gt;
+
+&lt;p&gt;This day (which included various other aborted attempts prior to the final output) made me realise how hard it is to do 3D mapping (especially of any variable other than terrain) well.&lt;/p&gt;
+
+&lt;h1 id=&quot;map-not-made-with-gis-software&quot;&gt;Map not made with GIS software&lt;/h1&gt;
+
+&lt;p&gt;US unemployment trends by state, “mapped” with sparklines in Excel&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/excel-1.png&quot; alt=&quot;better than making maps in MS Paint?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The recent spikes (vertical black lines at the right of cells) ‘squish’ the y-axis somewhat (the max value is Nevada in April this year with 30.1% unemployment), so below is a version with each cell/state setting their own y-axis range:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/excel-2.png&quot; alt=&quot;at least it crashes less than ArcGIS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: &lt;a href=&quot;https://www.bls.gov/web/laus.supp.toc.htm&quot;&gt;US Bureau of Labor Statistics&lt;/a&gt; – I chose US data purely because it was easier to make a ‘grid’ map (where each state is a spreadsheet cell) from 50 states than 650 Parliamentary constituencies (or whatever other spatial division any UK data would be in)&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: Excel&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: pivot table to wrangle the data, sparklines to map the trend for each state in a cell of the spreadsheet&lt;/p&gt;
+
+&lt;h1 id=&quot;raster&quot;&gt;Raster&lt;/h1&gt;
+
+&lt;p&gt;Average monthly daytime land surface temperature, November 2019 to October 2020 (basically a non-hexbin version of the Hexagons map)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/raster.gif&quot; alt=&quot;raster&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: &lt;a href=&quot;https://lpdaac.usgs.gov/products/mod11c3v006/&quot;&gt;Land Surface Temperature&lt;/a&gt; from the MODIS sensor on NASA’s Terra and Aqua satellites&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS, PowerPoint for labels, &lt;a href=&quot;http://ezgif.com&quot;&gt;ezgif.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;climate-change&quot;&gt;Climate change&lt;/h1&gt;
+
+&lt;p&gt;Participation in the 2016 Paris Climate Agreement&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/climate.png&quot; alt=&quot;increasingly hot stuff&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: &lt;a href=&quot;https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&amp;amp;mtdsg_no=XXVII-7-d&amp;amp;chapter=27&quot;&gt;UN Treaties Collection&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: R for light data wrangling, QGIS for mapping, PowerPoint for labelling&lt;br /&gt;
+&lt;strong&gt;Colour scheme&lt;/strong&gt;: kinda ugly QGIS defaults but oh well&lt;/p&gt;
+
+&lt;h1 id=&quot;connections&quot;&gt;Connections&lt;/h1&gt;
+
+&lt;p&gt;Connections between students’ term/home time addresses (in four parts!)&lt;/p&gt;
+
+&lt;p&gt;Map 1: all of GB – rather cluttered but shows the main axes of movement&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/connections-GB.png&quot; alt=&quot;Great Britain&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Map 2: movement to/from Nottingham (although I’m slightly suspicious that there don’t appear to be &lt;em&gt;any&lt;/em&gt; movements between there and Wales)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/connections-notts.png&quot; alt=&quot;Nottingham&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Map 3: to/from Cambridge&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/connections-cambridge.png&quot; alt=&quot;Cambridge&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Map 4: to/from London&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/connections-london.png&quot; alt=&quot;London&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: Origin and destination of people who moved from a student term time address in the year before the 2011 census (I mapped those aged 18+) via &lt;a href=&quot;https://www.nomisweb.co.uk/census/2011/SM01UK&quot;&gt;Nomis&lt;/a&gt;, &lt;a href=&quot;https://www.statistics.digitalresources.jisc.ac.uk/dataset/2011-census-geography-boundaries-local-authorities&quot;&gt;UK Data Service&lt;/a&gt; for Local Authority boundaries&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: R for data wrangling, QGIS for mapping&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: calculate LA centroids and export to csv, use R to make a table with start/end geocode and number of moves count for each LA pair, create a linestring for each pair (using the centroid csv as lookup for the geometry), export the table with WKT linestrings as a csv and import to QGIS, set alpha level based on the natural log of number of moves between each LA pair:&lt;br /&gt;
+&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/connections-expression.png&quot; alt=&quot;expression&quot; /&gt;&lt;br /&gt;
+&lt;strong&gt;Inspiration&lt;/strong&gt;: James Cheshire’s &lt;a href=&quot;https://jcheshire.com/visualisation/mapping-flows/&quot;&gt;flow mapping&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;historical-map&quot;&gt;Historical map&lt;/h1&gt;
+
+&lt;p&gt;I didn’t have time to get as far as I would have liked so this is very much a work in progress: ceremonial counties in GB in a vaguely ‘historical’ style (late C19 / early C20 maybe?)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/historic.png&quot; alt=&quot;historical&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: countries from the excellent &lt;a href=&quot;http://naturalearthdata.com&quot;&gt;naturalearthdata.com&lt;/a&gt;, ceremonial counties from Ordnance Survey’s open &lt;a href=&quot;https://www.ordnancesurvey.co.uk/business-government/products/boundaryline&quot;&gt;Boundary-Line&lt;/a&gt; data, county towns (rather haphazardly) mapped by me&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS for everything&lt;br /&gt;
+&lt;strong&gt;Tasting notes&lt;/strong&gt;: The text buffers detract from the historical look, but without it the (mostly automatically placed) labels aren’t very legible so I’ve kept it for now – hopefully at some point I’ll have time to go back and properly place the labels (including counties/countries) and add more bits&lt;/p&gt;
+
+&lt;p&gt;For this day I think I probably spent more time looking at old maps to get styling ideas than I gave myself to actually make the map (hence it is rather unfinished)…&lt;/p&gt;
+
+&lt;h1 id=&quot;null&quot;&gt;NULL&lt;/h1&gt;
+
+&lt;p&gt;A lazy entry: a conspicuous line of missing data in the European Settlement Map, seen here remorselessly slicing Cambridge in twain&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/null.png&quot; alt=&quot;NULL&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: &lt;a href=&quot;https://ghslsys.jrc.ec.europa.eu/ESMVisualisation.php&quot;&gt;European Settlement Map 2015&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;population&quot;&gt;Population&lt;/h1&gt;
+
+&lt;p&gt;A recycled map (see Points), but newly labelled: population in England and Wales, with a point for every ~10 people&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/population.png&quot; alt=&quot;population&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: Output Area populations from the 2011 UK census (I can’t remember exactly where I got this from now, but it’s likely either the &lt;a href=&quot;https://www.ons.gov.uk/&quot;&gt;ONS website&lt;/a&gt; or &lt;a href=&quot;https://www.nomisweb.co.uk/&quot;&gt;Nomis&lt;/a&gt;, place labels from OS &lt;a href=&quot;https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack&quot;&gt;Open Zoomstack&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS&lt;/p&gt;
+
+&lt;h1 id=&quot;water&quot;&gt;Water&lt;/h1&gt;
+
+&lt;p&gt;The Wet Hemisphere™ ft annoying rendering artefact where Antarctica struggled to wrap itself around the bottom of the world&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/water.png&quot; alt=&quot;wet wet wet&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: &lt;a href=&quot;http://doi.org/10/dtg3&quot;&gt;7+GB of beautiful bathymetric data&lt;/a&gt; courtesy of the British Oceanographic Data Centre&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: &lt;a href=&quot;http://www.statsmapsnpix.com/2019/09/globe-projections-and-insets-in-qgis.html&quot;&gt;this very helpful tutorial&lt;/a&gt; by Alasdair Rae to get a globe projection in QGIS&lt;/p&gt;
+
+&lt;h1 id=&quot;landuse&quot;&gt;Landuse&lt;/h1&gt;
+
+&lt;p&gt;A somewhat arbitrarily generalised map of modal land cover in the UK&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/landcover.png&quot; alt=&quot;'landcover' or 'land cover'?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: Land Cover Map 2015 by the UK Centre for Ecology &amp;amp; Hydrology, in particular &lt;a href=&quot;https://doi.org/10.5285/711c8dc1-0f4e-42ad-a703-8b5d19c92247&quot;&gt;this dataset&lt;/a&gt; for Great Britain and &lt;a href=&quot;https://doi.org/10.5285/c38b3986-b67e-40e9-9026-85ddbe3830d3&quot;&gt;this dataset&lt;/a&gt; for Northern Ireland, plus the country outlines and hillshade from &lt;a href=&quot;http://naturalearthdata.com&quot;&gt;naturalearthdata.com&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: 1km dominant land cover (aggregate classes so fewer categories) rasters → ‘Sieve’ processing algorithm → polygonize the result → GRASS v.generalize with method=chaiken (nice because GRASS maintains the topology) → choose colours at semi-random&lt;/p&gt;
+
+&lt;p&gt;This took quite a while to work out a methodology to get the (vector) output I wanted from the (raster) original data – while I’m mostly happy with the final result there are a few places (eg around Southampton) where you can make out a part of the original pixelly grid that stubbornly refused to smooth. Also the country outline doesn’t match the data (eg around Orkney), but that is entirely my fault and could be very easily remediated were I not rushing.&lt;/p&gt;
+
+&lt;h1 id=&quot;elevation-andor-map-with-a-new-tool&quot;&gt;Elevation and/or Map with a New Tool&lt;/h1&gt;
+
+&lt;p&gt;A big slice of the Peru-Chile trench and Andes, nauseatingly spinning:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/elevation.gif&quot; alt=&quot;elevation&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: &lt;a href=&quot;http://doi.org/10/dtg3&quot;&gt;7+GB of beautiful bathymetric (and elevation) data&lt;/a&gt; courtesy of the British Oceanographic Data Centre&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS, Tyler Morgan-Wall’s {&lt;a href=&quot;https://www.rayshader.com/&quot;&gt;rayshader&lt;/a&gt;} package for R&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: Methods: crop bathymetric DEM (.tif) in QGIS, create a separate .png to colour the bathymetry, mostly follow &lt;a href=&quot;https://wcmbishop.github.io/rayshader-demo/&quot;&gt;this rayshader tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;a-map&quot;&gt;A map&lt;/h1&gt;
+
+&lt;p&gt;A final map: another use of rayshader, this time to map the Grand Canyon&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/grand-canyon-1.gif&quot; alt=&quot;Grand Canyon 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And another bonus render just for good measure: a zoom into the position of the previous gif, this time with some satellite imagery to get a better feel of the nicely stratified geology and the vegetation on the plateaus&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/30DayMapChallenge-2020/grand-canyon-2.gif&quot; alt=&quot;Grand Canyon 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Data&lt;/strong&gt;: NASA 1-arcsec SRTM (via &lt;a href=&quot;http://dwtkns.com/srtm30m&quot;&gt;Derek Watkins’ SRTM Tile Downloader&lt;/a&gt;)&lt;br /&gt;
+&lt;strong&gt;Tools&lt;/strong&gt;: QGIS, Tyler Morgan-Wall’s {&lt;a href=&quot;https://www.rayshader.com/&quot;&gt;rayshader&lt;/a&gt;} package for R&lt;br /&gt;
+&lt;strong&gt;Methods&lt;/strong&gt;: crop DEM in QGIS, vary &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render_depth(focus=)&lt;/code&gt; in rayshader to slide the focus (using a function from &lt;a href=&quot;https://wcmbishop.github.io/rayshader-demo/&quot;&gt;this rayshader tutorial&lt;/a&gt; to easily calculate the values for each gif frame)&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I really enjoyed not only having an excuse to do lots of mapping myself, but also seeing all the maps produced by everyone else (if you’re in the mood for browsing, have a scroll through either the &lt;a href=&quot;https://twitter.com/hashtag/30DayMapChallenge&quot;&gt;hashtag on twitter&lt;/a&gt; or &lt;a href=&quot;https://david.frigge.nz/30DayMapChallenge2020/maps.html&quot;&gt;this gallery&lt;/a&gt; assembled by David Friggens). I think a particular value of the challenge was in forcing myself to produce and publish something within a set (and short) period of time – without these constraints I hesitate to publish anything that isn’t just the way I want it, and so have quite a collection of half-finished projects that are yet to reach my exacting standards.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;See also the &lt;a href=&quot;https://www.youtube.com/watch?v=EeJZR3Pv9tM&quot;&gt;Nolli Map&lt;/a&gt; and the use of &lt;a href=&quot;https://en.wikipedia.org/wiki/Figure-ground_diagram&quot;&gt;figure-ground&lt;/a&gt; maps in urban design. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Matthew Law</name></author><category term="GIS" /><category term="cartography" /><category term="QGIS" /><category term="R" /><summary type="html">As promised, over the course of November I attempted to produce (and tweet) a map a day as part of the #30DayMapChallenge. I managed 22 out of the 30 days, the results of which are below. Sharing these comes with the emphatic caveat that each was produced in a day (indeed usually in only an hour or two), and so there are many elements I do not like and would change if I had more time. Maybe I’ll go back and add to or otherwise improve some of them at a later date.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/30DayMapChallenge-2020/header.png" /><media:content medium="image" url="http://localhost:4000/assets/img/30DayMapChallenge-2020/header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Attempting the #30DayMapChallenge</title><link href="http://localhost:4000/blog/30daymapchallenge.html" rel="alternate" type="text/html" title="Attempting the #30DayMapChallenge" /><published>2020-10-31T11:00:00+00:00</published><updated>2020-10-31T11:00:00+00:00</updated><id>http://localhost:4000/blog/30daymapchallenge</id><content type="html" xml:base="http://localhost:4000/blog/30daymapchallenge.html">&lt;h3 id=&quot;i-am-going-to-attempt-the-30daymapchallenge&quot;&gt;I am going to attempt the &lt;a href=&quot;https://twitter.com/hashtag/30DayMapChallenge&quot;&gt;#30DayMapChallenge&lt;/a&gt;.&lt;/h3&gt;
 
 &lt;p&gt;Following Topi Tjukanov’s &lt;a href=&quot;https://github.com/tjukanovt/30DayMapChallenge&quot;&gt;daily themes&lt;/a&gt;, every day&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; throughout the month of November I shall create and publish a different map.&lt;/p&gt;
 
