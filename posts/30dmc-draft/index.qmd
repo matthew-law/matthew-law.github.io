@@ -1,0 +1,6 @@
+---
+title: "Draft #30DayMapChallenge Post"
+date: "2021-11-XX"
+categories: [30DayMapChallenge2021]
+draft: true
+---

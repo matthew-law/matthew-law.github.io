@@ -1,0 +1,15 @@
+---
+title: "A Few Things I've Made"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: [title, date]
+  filter-ui: true
+  fields: [image, title, categories]
+  image-height: 17.5em
+  image-placeholder: images/placeholder.png
+page-layout: full
+title-block-banner: false
+---

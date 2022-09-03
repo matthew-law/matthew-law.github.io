@@ -1,0 +1,27 @@
+---
+title: "Web Map of Green London"
+date: "2021-11-25"
+categories: [QGIS, 30DayMapChallenge2021]
+image: "images/zooms.jpeg"
+---
+
+Full interactive map:
+
+```{=html}
+<iframe width="780" height="500" src="https://matthewlaw.xyz/green-London-map/" title="Web Map of Green London"></iframe>
+```
+([Fullscreen version here](https://matthewlaw.xyz/green-London-map/))
+
+The map was made in QGIS with the 'Generate XYZ Tiles' tool and data from a few different sources:
+
+-   Forests, woods, and orchards from OpenStreetMap
+
+-   Street trees from the [London Datastore](https://data.london.gov.uk/dataset/local-authority-maintained-trees)
+
+-   Building outlines, roads, and place names from Ordnance Survey's [Open Zoomstack](https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack)
+
+-   Greenspaces from Ordnance Survey's [Open Greenspace](https://www.ordnancesurvey.co.uk/business-government/products/open-map-greenspace)
+
+The tree data also highlights the effect of the infamous tree ban in the London borough of Brent (shown below with a dotted outline):
+
+![](images/paste-8B86746D.png)

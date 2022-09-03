@@ -1,0 +1,16 @@
+---
+title: "Sinusoidal Map for The Projection Collection"
+date: "2022-06-08"
+categories: [QGIS]
+image: "images/54 - Sinusoidal Law.png"
+---
+
+My contribution to Daniel Huffman's [Projection Collection](https://somethingaboutmaps.wordpress.com/2022/06/07/projection-cards-now-a-reality/) project, a set of trading cards where card each is a different map projection.
+
+![](images/54%20-%20Sinusoidal%20Law.png)
+
+The map itself is a [Sinusoidal Projection](https://en.wikipedia.org/wiki/Sinusoidal_projection), and was made in QGIS using the '1981' polygons from [Project Linework](https://www.projectlinework.org/). The style is supposed to be vaguely reminiscent of a monochrome green CRT monitor -- I think it was the combination of the projection's bulge and the word 'sinusoidal' which brought that aesthetic to mind when I made the map.
+
+It was really nice to get to map alongside (in a sense) many cartographers whose work I really admire by contributing to the project.
+
+![I spy my map!](images/cards.jpeg)

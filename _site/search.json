@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "A Few Things I’ve Made",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlender\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nacademic\n\n\nPython\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/Rakaia-REM/index.html",
+    "href": "posts/Rakaia-REM/index.html",
+    "title": "Relative Elevation Model",
+    "section": "",
+    "text": "For those not in the know, a relative elevation model (REM) is basically a standard DEM, but normalised to the elevation of a river channel so the value of a given pixel gives the height of that point above the height of the nearest part of the river channel. Or so the theory goes – the creation of an REM in practice is as much of an art as a science and you can get quite different results depending on how you go about creating the REM.\n\nMade with 1m LiDAR-derived elevation data from Land Information New Zealand.\nIt’s interesting seeing the extent to which this kind of elevation data can reveal hydrological patterns that there’s no way of seeing when looking at aerial imagery:\n\nOriginal tweet thread here:\n\n\nMy first attempt at making a relative elevation model in QGIS, following excellent tutorials by @geo_coe 📍 Rakaia River 🇳🇿 https://t.co/yWM9IqeROd pic.twitter.com/IiBtZ0MpmO\n\n— Matthew Law (@Iawmatthew) February 3, 2022"
+  },
+  {
+    "objectID": "posts/UK-numbered-roads/index.html",
+    "href": "posts/UK-numbered-roads/index.html",
+    "title": "Colouring by Numbers",
+    "section": "",
+    "text": "I used a symbology expression in QGIS to colour the roads by number:\n\n(I believe this is what the kids call a Hit Tweet)\n\n\n#30DayMapChallenge Day 2: LinesGreat British roads, coloured by their numbers pic.twitter.com/aT5Vp0W89a\n\n— Matthew Law (@Iawmatthew) November 2, 2021"
+  },
+  {
+    "objectID": "posts/mapdeck-experiment/index.html",
+    "href": "posts/mapdeck-experiment/index.html",
+    "title": "mapdeck Experiment",
+    "section": "",
+    "text": "Full interactive map:"
+  },
+  {
+    "objectID": "posts/Ontario-grids/index.html",
+    "href": "posts/Ontario-grids/index.html",
+    "title": "Road Grids of Southern Ontario",
+    "section": "",
+    "text": "This map started with armchair travelling in Google Maps. I’d noticed that roads in the southern part of the Canadian province of Ontario were arranged in grids, but that there were a number of misaligned grids throughout the region:\n\nTo define the area I looked at the different administrative boundaries (admin_level 5 and 6 in OSM) and from these picked the ones I thought delineated the ‘griddiest’ area (very scientific, I know). Initially I tried getting the data into QGIS with the QuickOSM plugin but found that because the features were quite large the query often timed out, so I switched to using overpass turbo. I only wanted the roads which actually formed the grids (I know nothing of Canadian geography or history but Wikipedia leads me to believe these may be concession roads): through trial and error I settled on including everything on OpenStreetMap tagged highway=motorway, highway=trunk, highway=primary, or highway=secondary within the area of interest.\nIt was fun trying to reverse-engineer a methodology to try to get the different grid areas from just the roads – the basic Python methodology ended up being:\n\nuse the roads and land outline to create enclosures (polygons bounded by roads/boundary of study area)\ncalculate the orientation of eacch of these enclosures (technically, the orientation of the longest axis of their binding rectangles) using Martin Fleischmann’s excellent momepy package, rounding these values to the nearest 5°\ndefine as ‘neighbours’ of each enclosure: all enclosures that border a given enclosure (ie its direct neighbours), all enclosures that border the enclosures that border a given enclosure (ie its neighbours’ neighbours), and all other enclosures within 15 km\nget the modal orientation value (the one calculated in step two) for each enclosure + its neighbours (as defined above)\n\nThe full Python code used to make the map is available in a Jupyter notebook here, albeit you’ll need to provide your own data to reproduce it. If you do get that far though, you can use the .explore() method in geopandas to interactively explore the data:\n\nAn interesting point of comparison is this figure from “The Land Surveys Of Ontario 1750–1980”, an article by Louis M. Sebert in a 1980 edition of the journal Cartographica (doi: 10.3138/X1G3-5822-25G2-027M) which gives a bit of insight into how the grids ended up this way:"
+  },
+  {
+    "objectID": "posts/Seathwaite-blender/index.html",
+    "href": "posts/Seathwaite-blender/index.html",
+    "title": "An attempt at mapping with Blender",
+    "section": "",
+    "text": "I used 1m DTMs from DEFRA and OS Open Zoomstack for the water and forest features."
+  },
+  {
+    "objectID": "posts/pigs-of-Europe/index.html",
+    "href": "posts/pigs-of-Europe/index.html",
+    "title": "Pigs Points",
+    "section": "",
+    "text": "For the ‘monochrome’ day of the #30DayMapChallenge I made a fairly simple univariate map: the number of pigs per thousand people, visualised with points: denser points = more pigs per capita. I got the data from Eurostat (one of the mythical Brexit dividends is that since leaving the UE (and Eurostat) the UK is excluded from these kinds of map) via the eurostat R package.\nTo link the point density to the pigs per person, I used the Expression String Builder in QGIS – I played around with this for a bit to get a satisfactory spread of density\n\nOne of the surprises of the Challenge was that this map highlighted the Spanish region of Aragon as the pig capital of Europe – I didn’t give this fact much thought when making the map but it subsequently found its way to Aragonese Twitter, and so for a few days my replies were filled with Spanish comments on the map.\n\n\n#30DayMapChallenge Day 9: Monochrome🐖 Pigs of Europe 🇪🇺 pic.twitter.com/8E27dljpyk\n\n— Matthew Law (@Iawmatthew) November 9, 2021"
+  },
+  {
+    "objectID": "posts/projection-collection-sinusoidal/index.html",
+    "href": "posts/projection-collection-sinusoidal/index.html",
+    "title": "Sinusoidal Map for The Projection Collection",
+    "section": "",
+    "text": "The map itself is a Sinusoidal Projection, and was made in QGIS using the ‘1981’ polygons from Project Linework. The style is supposed to be vaguely reminiscent of a monochrome green CRT monitor – I think it was the combination of the projection’s bulge and the word ‘sinusoidal’ which brought that aesthetic to mind when I made the map.\nIt was really nice to get to map alongside (in a sense) many cartographers whose work I really admire by contributing to the project.\n\n\n\nI spy my map!"
+  },
+  {
+    "objectID": "posts/GB-roads/index.html",
+    "href": "posts/GB-roads/index.html",
+    "title": "Every Road in Great Britain",
+    "section": "",
+    "text": "A closer view of of dense London:\n\nAnd a nice chunk of sparser Scotland by means of contrast:"
+  },
+  {
+    "objectID": "posts/Protestants-Catholics-USA/index.html",
+    "href": "posts/Protestants-Catholics-USA/index.html",
+    "title": "Bivariate Choropleth: Protestantism and Catholocism in the US",
+    "section": "",
+    "text": "The nice legend was made with the bivariate legend plugin for QGIS.\nData at county level from the 2010 U.S. Religion Census Religious Congregations and Membership Study."
+  },
+  {
+    "objectID": "posts/green-London-webmap/index.html",
+    "href": "posts/green-London-webmap/index.html",
+    "title": "Web Map of Green London",
+    "section": "",
+    "text": "(Fullscreen version here)\nThe map was made in QGIS with the ‘Generate XYZ Tiles’ tool and data from a few different sources:\n\nForests, woods, and orchards from OpenStreetMap\nStreet trees from the London Datastore\nBuilding outlines, roads, and place names from Ordnance Survey’s Open Zoomstack\nGreenspaces from Ordnance Survey’s Open Greenspace\n\nThe tree data also highlights the effect of the infamous tree ban in the London borough of Brent (shown below with a dotted outline):"
+  },
+  {
+    "objectID": "posts/Cambridge-greenbelt/index.html",
+    "href": "posts/Cambridge-greenbelt/index.html",
+    "title": "Cambridge Greenbelt",
+    "section": "",
+    "text": "Data: greenbelt via the (now former) Department for Communities and Local Government INSPIRE OGC WFS Service, everything else from OS Open Zoomstack. Tools: QGIS, making use of the ability to combine multiple symbologies (namely shapeburst, striped fill, and outline for the greenbelt itself)."
+  },
+  {
+    "objectID": "posts/MSc-dissertation/index.html",
+    "href": "posts/MSc-dissertation/index.html",
+    "title": "MSc Dissertation",
+    "section": "",
+    "text": "As part of the Geographic Data Science MSc I completed at the University of Liverpool, I wrote a dissertation, the catchily-named “Using Urban Morphology to Improve Housing Submarket Spatial Segmentation”.\nI typeset the dissertation in R Markdown, which meant I could easily export both pdf and website versions.\nIn broad terms, the dissertation applies machine learning techniques to open data in order to partition a city into areas with different urban morphology. All of that was implemented in Python, relying on the momepy (‘Morphological Measuring in Python’) library developed by Martin Fleischmann, who supervised the dissertation along with Dani-Arribas Bel.\n\n\nWhenever geographic data are aggregated spatially, a decision must be made about the spatial unit into which individual data points are grouped. In analyses of the real estate market, properties are grouped in this way into housing submarkets: sections of the real estate market which share similar characteristics. Typically, existing spatial units (such as administrative neighbourhoods or districts) are used to represent these submarkets, however there is no guarantee that such units align with the housing market dynamics they seek to delineate. This dissertation presents a method to segment an urban area into different spatial units based on its built form – its urban morphology. The spatial segmentations produced are then assessed to determine whether they can be used to represent housing submarkets. Besides the novel segmentations themselves, the dissertation presents several methodological findings. Contextual characters and the transposition of cluster labels onto simpler geometries are shown to be key methods for ensuring spatially coherent segmentations. Segmentations are shown to significantly vary depending on the spatial units clustered to generate the segmentations (with regular grids performing significantly worse than units based on buildings), and on the clustering algorithm employed."
+  }
+]

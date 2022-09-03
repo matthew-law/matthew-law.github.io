@@ -1,0 +1,35 @@
+---
+title: "Relative Elevation Model"
+date: "2022-02-03"
+categories: [QGIS]
+---
+
+A first attempt at making a relative elevation model in QGIS, [following excellent tutorials by Daniel Coe](https://dancoecarto.com/tutorials).
+
+For those not in the know, a relative elevation model (REM) is basically a standard [DEM](https://en.wikipedia.org/wiki/Digital_elevation_model), but normalised to the elevation of a river channel so the value of a given pixel gives the height of that point *above the height of the nearest part of the river channel*. Or so the theory goes -- the creation of an REM in practice is as much of an art as a science and you can get quite different results depending on how you go about creating the REM.
+
+![](thumbnail.png)
+
+Made with [1m LiDAR-derived elevation data from Land Information New Zealand](https://data.linz.govt.nz/layer/53588-canterbury-christchurch-and-selwyn-lidar-1m-dsm-2015/).
+
+It's interesting seeing the extent to which this kind of elevation data can reveal hydrological patterns that there's no way of seeing when looking at aerial imagery:
+
+![](hidden%20river.gif)
+
+Original tweet thread here:
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+My first attempt at making a relative elevation model in QGIS, following excellent tutorials by <a href="https://twitter.com/geo_coe?ref_src=twsrc%5Etfw">@geo_coe</a> <br><br>📍 Rakaia River 🇳🇿 <a href="https://t.co/yWM9IqeROd">https://t.co/yWM9IqeROd</a> <a href="https://t.co/IiBtZ0MpmO">pic.twitter.com/IiBtZ0MpmO</a>
+
+</p>
+
+--- Matthew Law (@Iawmatthew) <a href="https://twitter.com/Iawmatthew/status/1489230577580613637?ref_src=twsrc%5Etfw">February 3, 2022</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```

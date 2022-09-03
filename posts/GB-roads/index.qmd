@@ -1,0 +1,17 @@
+---
+title: "Every Road in Great Britain"
+date: "2020-11-02"
+categories: [QGIS, 30DayMapChallenge2020]
+---
+
+All of the roads in Great Britain, taken from Ordnance Survey's [Open Zoomstack](https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack) data and mapped in QGIS using colour blending to make areas with more roads whiter.
+
+![](images/lines-GB.png)
+
+A closer view of of dense London:
+
+![](images/lines-London.png)
+
+And a nice chunk of sparser Scotland by means of contrast:
+
+![](images/lines-Scotland.png)

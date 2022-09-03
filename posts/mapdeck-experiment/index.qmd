@@ -1,0 +1,20 @@
+---
+title: "`mapdeck` Experiment"
+date: "2021-11-16"
+categories: [R, 30DayMapChallenge2021]
+image: "images/paste-B7AAF38C.png"
+---
+
+A first experiment using [`mapdeck`](https://symbolixau.github.io/mapdeck/index.html), an R wrapper for [deck.gl](https://deck.gl) and [Mapbox](https://www.mapbox.com/), to create an interactive web map of a thoroughly urban chunk of Barcelona:
+
+![](images/paste-307E0D0C.png)
+
+![](images/paste-B7AAF38C.png)
+
+![](images/paste-BA071FA6.png)
+
+Full interactive map:
+
+```{=html}
+<iframe width="780" height="500" src="https://matthewlaw.xyz/mapdeck-experiment/" title="`mapdeck` Experiment"></iframe>
+```

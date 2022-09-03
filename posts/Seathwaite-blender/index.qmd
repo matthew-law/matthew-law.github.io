@@ -1,0 +1,11 @@
+---
+title: "An attempt at mapping with Blender"
+date: "2021-11-14"
+categories: [Blender, 30DayMapChallenge2021]
+---
+
+Inspired by [Owen Powell's excellent Blender creations](https://owenpowell.wordpress.com/30-day-map-challenge-2020/) over the course of last year's challenge, I had a go using Blender for the first time, mapping the area around Seathwaite Tarn in the Lake District.
+
+![](images/Seathwaite.png)
+
+I used 1m DTMs from [DEFRA](https://environment.data.gov.uk/DefraDataDownload/) and [OS Open Zoomstack](https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack) for the water and forest features.
