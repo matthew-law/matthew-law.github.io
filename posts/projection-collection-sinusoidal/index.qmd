@@ -5,7 +5,7 @@ categories: [QGIS]
 image: "images/54 - Sinusoidal Law.png"
 ---
 
-My contribution to Daniel Huffman's [Projection Collection](https://somethingaboutmaps.wordpress.com/2022/06/07/projection-cards-now-a-reality/) project, a set of trading cards where card each is a different map projection.
+My contribution to Daniel Huffman's [Projection Collection](https://somethingaboutmaps.wordpress.com/2022/06/07/projection-cards-now-a-reality/) project, a set of trading cards where each card is a different map projection.
 
 ![](images/54%20-%20Sinusoidal%20Law.png)
 
