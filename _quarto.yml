@@ -22,6 +22,9 @@ website:
       - icon: twitter
         href: https://twitter.com/Iawmatthew
         aria-label: Twitter
+      - icon: mastodon
+        href: https://mapstodon.space/@MatthewLaw
+        aria-label: Mastodon
 format:
   html:
     theme:

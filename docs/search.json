@@ -4,7 +4,7 @@
     "href": "posts/Seathwaite-blender/index.html",
     "title": "An attempt at mapping with Blender",
     "section": "",
-    "text": "I used 1m DTMs from DEFRA and OS Open Zoomstack for the water and forest features."
+    "text": "Inspired by Owen Powell’s excellent Blender creations over the course of last year’s challenge, I had a go using Blender for the first time, mapping the area around Seathwaite Tarn in the Lake District.\n\nI used 1m DTMs from DEFRA and OS Open Zoomstack for the water and forest features."
   },
   {
     "objectID": "posts/Ontario-grids/index.html",
@@ -18,28 +18,28 @@
     "href": "posts/green-London-webmap/index.html",
     "title": "Web Map of Green London",
     "section": "",
-    "text": "(Fullscreen version here)\nThe map was made in QGIS with the ‘Generate XYZ Tiles’ tool and data from a few different sources:\n\nForests, woods, and orchards from OpenStreetMap\nStreet trees from the London Datastore\nBuilding outlines, roads, and place names from Ordnance Survey’s Open Zoomstack\nGreenspaces from Ordnance Survey’s Open Greenspace\n\nThe tree data also highlights the effect of the infamous tree ban in the London borough of Brent (shown below with a dotted outline):"
+    "text": "Full interactive map:\n\n(Fullscreen version here)\nThe map was made in QGIS with the ‘Generate XYZ Tiles’ tool and data from a few different sources:\n\nForests, woods, and orchards from OpenStreetMap\nStreet trees from the London Datastore\nBuilding outlines, roads, and place names from Ordnance Survey’s Open Zoomstack\nGreenspaces from Ordnance Survey’s Open Greenspace\n\nThe tree data also highlights the effect of the infamous tree ban in the London borough of Brent (shown below with a dotted outline):"
   },
   {
     "objectID": "posts/mapdeck-experiment/index.html",
     "href": "posts/mapdeck-experiment/index.html",
     "title": "mapdeck Experiment",
     "section": "",
-    "text": "Full interactive map:\n\n\nThe R code to produce the map is available here."
+    "text": "A first experiment using mapdeck, an R wrapper for deck.gl and Mapbox, to create an interactive web map of a thoroughly urban chunk of Barcelona:\n\n\n\nFull interactive map:\n\n\nThe R code to produce the map is available here."
   },
   {
     "objectID": "posts/Protestants-Catholics-USA/index.html",
     "href": "posts/Protestants-Catholics-USA/index.html",
     "title": "Bivariate Choropleth: Protestantism and Catholocism in the US",
     "section": "",
-    "text": "The nice legend was made with the bivariate legend plugin for QGIS.\nData at county level from the 2010 U.S. Religion Census Religious Congregations and Membership Study."
+    "text": "Protestantism and Catholicism in the (contiguous) USA (sorry Alaska + Hawaii), mapped in QGIS as a bivariate choropleth map.\n\nThe nice legend was made with the bivariate legend plugin for QGIS.\nData at county level from the 2010 U.S. Religion Census Religious Congregations and Membership Study."
   },
   {
     "objectID": "posts/MSc-dissertation/index.html",
     "href": "posts/MSc-dissertation/index.html",
     "title": "MSc Dissertation",
     "section": "",
-    "text": "As part of the Geographic Data Science MSc I completed at the University of Liverpool, I wrote a dissertation, the catchily-named “Using Urban Morphology to Improve Housing Submarket Spatial Segmentation”.\nI typeset the dissertation in R Markdown, which meant I could easily export both pdf and website versions.\nIn broad terms, the dissertation applies machine learning techniques to open data in order to partition a city into areas with different urban morphology. All of that was implemented in Python, relying on the momepy (‘Morphological Measuring in Python’) library developed by Martin Fleischmann, who supervised the dissertation along with Dani-Arribas Bel.\n\n\nWhenever geographic data are aggregated spatially, a decision must be made about the spatial unit into which individual data points are grouped. In analyses of the real estate market, properties are grouped in this way into housing submarkets: sections of the real estate market which share similar characteristics. Typically, existing spatial units (such as administrative neighbourhoods or districts) are used to represent these submarkets, however there is no guarantee that such units align with the housing market dynamics they seek to delineate. This dissertation presents a method to segment an urban area into different spatial units based on its built form – its urban morphology. The spatial segmentations produced are then assessed to determine whether they can be used to represent housing submarkets. Besides the novel segmentations themselves, the dissertation presents several methodological findings. Contextual characters and the transposition of cluster labels onto simpler geometries are shown to be key methods for ensuring spatially coherent segmentations. Segmentations are shown to significantly vary depending on the spatial units clustered to generate the segmentations (with regular grids performing significantly worse than units based on buildings), and on the clustering algorithm employed."
+    "text": "Link to full dissertation\nAs part of the Geographic Data Science MSc I completed at the University of Liverpool, I wrote a dissertation, the catchily-named “Using Urban Morphology to Improve Housing Submarket Spatial Segmentation”.\nI typeset the dissertation in R Markdown, which meant I could easily export both pdf and website versions.\nIn broad terms, the dissertation applies machine learning techniques to open data in order to partition a city into areas with different urban morphology. All of that was implemented in Python, relying on the momepy (‘Morphological Measuring in Python’) library developed by Martin Fleischmann, who supervised the dissertation along with Dani-Arribas Bel.\n\nFull abstract\nWhenever geographic data are aggregated spatially, a decision must be made about the spatial unit into which individual data points are grouped. In analyses of the real estate market, properties are grouped in this way into housing submarkets: sections of the real estate market which share similar characteristics. Typically, existing spatial units (such as administrative neighbourhoods or districts) are used to represent these submarkets, however there is no guarantee that such units align with the housing market dynamics they seek to delineate. This dissertation presents a method to segment an urban area into different spatial units based on its built form – its urban morphology. The spatial segmentations produced are then assessed to determine whether they can be used to represent housing submarkets. Besides the novel segmentations themselves, the dissertation presents several methodological findings. Contextual characters and the transposition of cluster labels onto simpler geometries are shown to be key methods for ensuring spatially coherent segmentations. Segmentations are shown to significantly vary depending on the spatial units clustered to generate the segmentations (with regular grids performing significantly worse than units based on buildings), and on the clustering algorithm employed."
   },
   {
     "objectID": "posts/Menan-Buttes-rayshader/index.html",
@@ -53,28 +53,28 @@
     "href": "posts/projection-collection-sinusoidal/index.html",
     "title": "Sinusoidal Map for The Projection Collection",
     "section": "",
-    "text": "The map itself is a Sinusoidal Projection, and was made in QGIS using the ‘1981’ polygons from Project Linework. The style is supposed to be vaguely reminiscent of a monochrome green CRT monitor – I think it was the combination of the projection’s bulge and the word ‘sinusoidal’ which brought that aesthetic to mind when I made the map.\nIt was really nice to get to map alongside (in a sense) many cartographers whose work I really admire by contributing to the project.\n\n\n\nI spy my map!"
+    "text": "My contribution to Daniel Huffman’s Projection Collection project, a set of trading cards where each card is a different map projection.\n\nThe map itself is a Sinusoidal Projection, and was made in QGIS using the ‘1981’ polygons from Project Linework. The style is supposed to be vaguely reminiscent of a monochrome green CRT monitor – I think it was the combination of the projection’s bulge and the word ‘sinusoidal’ which brought that aesthetic to mind when I made the map.\nIt was really nice to get to map alongside (in a sense) many cartographers whose work I really admire by contributing to the project.\n\n\n\nI spy my map!"
   },
   {
     "objectID": "posts/UK-numbered-roads/index.html",
     "href": "posts/UK-numbered-roads/index.html",
     "title": "Colouring by Numbers",
     "section": "",
-    "text": "I used a symbology expression in QGIS to colour the roads by number:\n\n(I believe this is what the kids call a Hit Tweet)\n\n\n#30DayMapChallenge Day 2: LinesGreat British roads, coloured by their numbers pic.twitter.com/aT5Vp0W89a\n\n— Matthew Law (@Iawmatthew) November 2, 2021"
+    "text": "Whiling away the finite hours of my life reading Wikipedia, I came across a map purporting to show different regions for the UK’s numbered roads. Immediately I questioned its accuracy: I live firmly within the ‘1’ zone, and while it is true that most of my local numbered roads begin with 1 I’m also a frequent driver on the local A428, A505, and A603, so surely the regions mapped can’t be accurate. Naturally, the only course of action was to map out this hypothesis myself, using data from Ordnance Survey’s Open Zoomstack. The answer is that the Wikipedia map is mostly accurate, although there is definitely some overlap:\n\nI used a symbology expression in QGIS to colour the roads by number:\n\n(I believe this is what the kids call a Hit Tweet)\n\n\n#30DayMapChallenge Day 2: LinesGreat British roads, coloured by their numbers pic.twitter.com/aT5Vp0W89a\n\n— Matthew Law (@Iawmatthew) November 2, 2021"
   },
   {
     "objectID": "posts/GB-roads/index.html",
     "href": "posts/GB-roads/index.html",
     "title": "Every Road in Great Britain",
     "section": "",
-    "text": "A closer view of of dense London:\n\nAnd a nice chunk of sparser Scotland by means of contrast:"
+    "text": "All of the roads in Great Britain, taken from Ordnance Survey’s Open Zoomstack data and mapped in QGIS using colour blending to make areas with more roads whiter.\n\nA closer view of of dense London:\n\nAnd a nice chunk of sparser Scotland by means of contrast:"
   },
   {
     "objectID": "posts/Rakaia-REM/index.html",
     "href": "posts/Rakaia-REM/index.html",
     "title": "Relative Elevation Model",
     "section": "",
-    "text": "For those not in the know, a relative elevation model (REM) is basically a standard DEM, but normalised to the elevation of a river channel so the value of a given pixel gives the height of that point above the height of the nearest part of the river channel. Or so the theory goes – the creation of an REM in practice is as much of an art as a science and you can get quite different results depending on how you go about creating the REM.\n\nMade with 1m LiDAR-derived elevation data from Land Information New Zealand.\nIt’s interesting seeing the extent to which this kind of elevation data can reveal hydrological patterns that there’s no way of seeing when looking at aerial imagery:\n\nOriginal tweet thread here:\n\n\nMy first attempt at making a relative elevation model in QGIS, following excellent tutorials by @geo_coe 📍 Rakaia River 🇳🇿 https://t.co/yWM9IqeROd pic.twitter.com/IiBtZ0MpmO\n\n— Matthew Law (@Iawmatthew) February 3, 2022"
+    "text": "A first attempt at making a relative elevation model in QGIS, following excellent tutorials by Daniel Coe.\nFor those not in the know, a relative elevation model (REM) is basically a standard DEM, but normalised to the elevation of a river channel so the value of a given pixel gives the height of that point above the height of the nearest part of the river channel. Or so the theory goes – the creation of an REM in practice is as much of an art as a science and you can get quite different results depending on how you go about creating the REM.\n\nMade with 1m LiDAR-derived elevation data from Land Information New Zealand.\nIt’s interesting seeing the extent to which this kind of elevation data can reveal hydrological patterns that there’s no way of seeing when looking at aerial imagery:\n\nOriginal tweet thread here:\n\n\nMy first attempt at making a relative elevation model in QGIS, following excellent tutorials by @geo_coe 📍 Rakaia River 🇳🇿 https://t.co/yWM9IqeROd pic.twitter.com/IiBtZ0MpmO\n\n— Matthew Law (@Iawmatthew) February 3, 2022"
   },
   {
     "objectID": "posts/pigs-of-Europe/index.html",
@@ -88,14 +88,14 @@
     "href": "posts/Cambridge-greenbelt/index.html",
     "title": "Cambridge Greenbelt",
     "section": "",
-    "text": "Data: greenbelt via the (now former) Department for Communities and Local Government INSPIRE OGC WFS Service, everything else from OS Open Zoomstack. Tools: QGIS, making use of the ability to combine multiple symbologies (namely shapeburst, striped fill, and outline for the greenbelt itself)."
+    "text": "A map of Cambridge’s greenbelt, mapped from one of the little rural enclaves with a view of said belt from my window.\n\nData: greenbelt via the (now former) Department for Communities and Local Government INSPIRE OGC WFS Service, everything else from OS Open Zoomstack. Tools: QGIS, making use of the ability to combine multiple symbologies (namely shapeburst, striped fill, and outline for the greenbelt itself)."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "A Few Things I’ve Made",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlender\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nacademic\n\n\nPython\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMenan Buttes mapped in rayshader\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSinusoidal Map for The Projection Collection\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRelative Elevation Model\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBivariate Choropleth: Protestantism and Catholocism in the US\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeb Map of Green London\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmapdeck Experiment\n\n\n\nR\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAn attempt at mapping with Blender\n\n\n\nBlender\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPigs Points\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoad Grids of Southern Ontario\n\n\n\nPython\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColouring by Numbers\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMSc Dissertation\n\n\n\nacademic\n\n\nPython\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCambridge Greenbelt\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery Road in Great Britain\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
