@@ -25,7 +25,7 @@
     "href": "posts/mapdeck-experiment/index.html",
     "title": "mapdeck Experiment",
     "section": "",
-    "text": "Full interactive map:"
+    "text": "Full interactive map:\n\n\nThe R code to produce the map is available here."
   },
   {
     "objectID": "posts/Protestants-Catholics-USA/index.html",
@@ -40,6 +40,13 @@
     "title": "MSc Dissertation",
     "section": "",
     "text": "As part of the Geographic Data Science MSc I completed at the University of Liverpool, I wrote a dissertation, the catchily-named “Using Urban Morphology to Improve Housing Submarket Spatial Segmentation”.\nI typeset the dissertation in R Markdown, which meant I could easily export both pdf and website versions.\nIn broad terms, the dissertation applies machine learning techniques to open data in order to partition a city into areas with different urban morphology. All of that was implemented in Python, relying on the momepy (‘Morphological Measuring in Python’) library developed by Martin Fleischmann, who supervised the dissertation along with Dani-Arribas Bel.\n\n\nWhenever geographic data are aggregated spatially, a decision must be made about the spatial unit into which individual data points are grouped. In analyses of the real estate market, properties are grouped in this way into housing submarkets: sections of the real estate market which share similar characteristics. Typically, existing spatial units (such as administrative neighbourhoods or districts) are used to represent these submarkets, however there is no guarantee that such units align with the housing market dynamics they seek to delineate. This dissertation presents a method to segment an urban area into different spatial units based on its built form – its urban morphology. The spatial segmentations produced are then assessed to determine whether they can be used to represent housing submarkets. Besides the novel segmentations themselves, the dissertation presents several methodological findings. Contextual characters and the transposition of cluster labels onto simpler geometries are shown to be key methods for ensuring spatially coherent segmentations. Segmentations are shown to significantly vary depending on the spatial units clustered to generate the segmentations (with regular grids performing significantly worse than units based on buildings), and on the clustering algorithm employed."
+  },
+  {
+    "objectID": "posts/Menan-Buttes-rayshader/index.html",
+    "href": "posts/Menan-Buttes-rayshader/index.html",
+    "title": "Menan Buttes mapped in rayshader",
+    "section": "",
+    "text": "A map of the Menan Buttes—a couple of volcanic cones in Idaho—mapped with the rayshader package in R.\n\n\nThe R code to produce the map is available here.\nThe elevation data comes from the USGS’s 3D Elevation Program via terrainr::get_tiles(), the river data comes from OpenStreetMap."
   },
   {
     "objectID": "posts/projection-collection-sinusoidal/index.html",
@@ -88,7 +95,7 @@
     "href": "index.html",
     "title": "A Few Things I’ve Made",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlender\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nacademic\n\n\nPython\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlender\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nacademic\n\n\nPython\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",

@@ -1,0 +1,14 @@
+---
+title: "Menan Buttes mapped in `rayshader`"
+date: "2022-11-07"
+categories: [R]
+# image: "images/paste-B7AAF38C.png"
+---
+
+A map of the Menan Buttes---a couple of volcanic cones in Idaho---mapped with the [`rayshader`](https://www.rayshader.com/) package in R.
+
+![](images/Menan%20Buttes.png){fig-alt="Menan Buttes"}
+
+### The R code to produce the map is available [here](https://github.com/matthew-law/30DayMapChallenge2022/blob/main/raster/raster.R).
+
+The elevation data comes from the USGS's 3D Elevation Program via `terrainr::get_tiles()`, the river data comes from OpenStreetMap.

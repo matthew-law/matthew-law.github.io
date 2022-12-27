@@ -18,3 +18,4 @@ Full interactive map:
 ```{=html}
 <iframe width="780" height="500" src="https://matthewlaw.xyz/mapdeck-experiment/" title="`mapdeck` Experiment"></iframe>
 ```
+### The R code to produce the map is available [here](https://github.com/matthew-law/30DayMapChallenge2021/blob/main/urban/mapdeck.R).
