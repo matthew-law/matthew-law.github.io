@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Matthew Law</title>
+<link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
+<atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
+<description>Map enthusiast</description>
+<generator>quarto-1.2.269</generator>
+<lastBuildDate>Thu, 29 Dec 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Wollaton Park Map</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Wollaton-Park/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A map of Wollaton Park in Nottingham – right click → Open Image in New Tab to have a look at all the details.</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Wollaton-Park/images/Wollaton Park.png" class="img-fluid" alt="A really great map of Wollaton Park"></p>
+<p>The primary inspiration for the map was the Environment Agency’s <a href="https://experience.arcgis.com/experience/753ad2ebd3554fa696885b8c366c3049/page/LIDAR/?views=Vegetation-Object-Model">Vegetation Object Model</a> data product, a raster where each pixel represents the top height of the canopy for all vegetation taller than 2.5 metres. I wanted to map somewhere with the right scale and mixture of vegetation coverage to nicely showcase the data, and Wollaton Park seemed to provide this.</p>
+<p>The VOM does come with a prerendered hillshade layer, but I wanted to have a bit more control over this, so used the <a href="https://www.rayshader.com/"><code>rayshader</code></a> package in R to generate my own – R code to do so available <a href="https://github.com/matthew-law/30DayMapChallenge2022/blob/main/green/green.R">here</a>! This meant that I could choose my own angle for the shadows (meaning it wouldn’t look off when I rotated the map), and mix in a layer with subtle ambient lighting. The code includes a function to save the array that rayshader generates to a projected geotiff I could drag/drop into QGIS and have appear in the right place (harder than I thought it would have been, although I wouldn’t be surprised if I missed an easier way to achieve the same thing) so do steal that function if you ever need such a thing!</p>
+<p>The contour lines were generated from a lidar composite DTM from <a href="https://environment.data.gov.uk/DefraDataDownload/">Defra</a>, and the rest of the data came from OpenStreetMap (I particularly like the individually mapped golf fairways and greens, although looking at it now I think the colours I chose are too subtle).</p>
+<p>Everything was put together in QGIS, using geometry generator expressions to smooth the contours and generate waterlines for the lake, <a href="https://anitagraser.com/2022/08/14/forget-label-buffers-better-maps-with-selective-label-masks-in-qgis/" title="something that is so much easier in QGIS than in ArcGIS">label masks</a> for the labelling of both of these, and lots of use of the different layer blending modes to combine the various vegetation colour/shadow layers.</p>
+
+
+
+ ]]></description>
+  <category>QGIS</category>
+  <category>R</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Wollaton-Park/index.html</guid>
+  <pubDate>Thu, 29 Dec 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Wollaton-Park/images/Wollaton%20Park.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>Menan Buttes mapped in rayshader</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Menan-Buttes-rayshader/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A map of the Menan Buttes—a couple of volcanic cones in Idaho—mapped with the <a href="https://www.rayshader.com/"><code>rayshader</code></a> package in R.</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Menan-Buttes-rayshader/images/Menan Buttes.png" class="img-fluid" alt="Menan Buttes"></p>
+<section id="the-r-code-to-produce-the-map-is-available-here." class="level3">
+<h3 class="anchored" data-anchor-id="the-r-code-to-produce-the-map-is-available-here.">The R code to produce the map is available <a href="https://github.com/matthew-law/30DayMapChallenge2022/blob/main/raster/raster.R">here</a>.</h3>
+<p>The elevation data comes from the USGS’s 3D Elevation Program via <code>terrainr::get_tiles()</code>, the river data comes from OpenStreetMap.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Menan-Buttes-rayshader/index.html</guid>
+  <pubDate>Mon, 07 Nov 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Menan-Buttes-rayshader/images/Menan%20Buttes.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>Sinusoidal Map for The Projection Collection</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>My contribution to Daniel Huffman’s <a href="https://somethingaboutmaps.wordpress.com/2022/06/07/projection-cards-now-a-reality/">Projection Collection</a> project, a set of trading cards where each card is a different map projection.</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/images/54 - Sinusoidal Law.png" class="img-fluid"></p>
+<p>The map itself is a <a href="https://en.wikipedia.org/wiki/Sinusoidal_projection">Sinusoidal Projection</a>, and was made in QGIS using the ‘1981’ polygons from <a href="https://www.projectlinework.org/">Project Linework</a>. The style is supposed to be vaguely reminiscent of a monochrome green CRT monitor – I think it was the combination of the projection’s bulge and the word ‘sinusoidal’ which brought that aesthetic to mind when I made the map.</p>
+<p>It was really nice to get to map alongside (in a sense) many cartographers whose work I really admire by contributing to the project.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/images/cards.jpeg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">I spy my map!</figcaption><p></p>
+</figure>
+</div>
+
+
+
+ ]]></description>
+  <category>QGIS</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/index.html</guid>
+  <pubDate>Tue, 07 Jun 2022 23:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/images/54 - Sinusoidal Law.png" medium="image" type="image/png" height="103" width="144"/>
+</item>
+<item>
+  <title>Relative Elevation Model</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Rakaia-REM/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A first attempt at making a relative elevation model in QGIS, <a href="https://dancoecarto.com/tutorials">following excellent tutorials by Daniel Coe</a>.</p>
+<p>For those not in the know, a relative elevation model (REM) is basically a standard <a href="https://en.wikipedia.org/wiki/Digital_elevation_model">DEM</a>, but normalised to the elevation of a river channel so the value of a given pixel gives the height of that point <em>above the height of the nearest part of the river channel</em>. Or so the theory goes – the creation of an REM in practice is as much of an art as a science and you can get quite different results depending on how you go about creating the REM.</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Rakaia-REM/thumbnail.png" class="img-fluid"></p>
+<p>Made with <a href="https://data.linz.govt.nz/layer/53588-canterbury-christchurch-and-selwyn-lidar-1m-dsm-2015/">1m LiDAR-derived elevation data from Land Information New Zealand</a>.</p>
+<p>It’s interesting seeing the extent to which this kind of elevation data can reveal hydrological patterns that there’s no way of seeing when looking at aerial imagery:</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Rakaia-REM/hidden river.gif" class="img-fluid"></p>
+<p>Original tweet thread here:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+</p><p>My first attempt at making a relative elevation model in QGIS, following excellent tutorials by <a href="https://twitter.com/geo_coe?ref_src=twsrc%5Etfw"><span class="citation" data-cites="geo_coe">@geo_coe</span></a> <br><br>📍 Rakaia River 🇳🇿 <a href="https://t.co/yWM9IqeROd">https://t.co/yWM9IqeROd</a> <a href="https://t.co/IiBtZ0MpmO">pic.twitter.com/IiBtZ0MpmO</a></p>
+<p></p>
+<p>— Matthew Law (<span class="citation" data-cites="Iawmatthew">@Iawmatthew</span>) <a href="https://twitter.com/Iawmatthew/status/1489230577580613637?ref_src=twsrc%5Etfw">February 3, 2022</a></p>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+ ]]></description>
+  <category>QGIS</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Rakaia-REM/index.html</guid>
+  <pubDate>Thu, 03 Feb 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Rakaia-REM/thumbnail.png" medium="image" type="image/png" height="100" width="144"/>
+</item>
+<item>
+  <title>Bivariate Choropleth: Protestantism and Catholocism in the US</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Protestants-Catholics-USA/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Protestantism and Catholicism in the (contiguous) USA (sorry Alaska + Hawaii), mapped in QGIS as a bivariate choropleth map.</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Protestants-Catholics-USA/images/Protestantism-Catholicism.png" class="img-fluid"></p>
+<p>The nice legend was made with the <a href="https://plugins.qgis.org/plugins/BivariateLegend/">bivariate legend plugin for QGIS</a>.</p>
+<p>Data at county level from the <a href="https://doi.org/10.17605/OSF.IO/QUN29">2010 U.S. Religion Census Religious Congregations and Membership Study</a>.</p>
+
+
+
+ ]]></description>
+  <category>QGIS</category>
+  <category>30DayMapChallenge2021</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Protestants-Catholics-USA/index.html</guid>
+  <pubDate>Fri, 26 Nov 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Protestants-Catholics-USA/images/Protestantism-Catholicism.png" medium="image" type="image/png" height="102" width="144"/>
+</item>
+<item>
+  <title>Web Map of Green London</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/green-London-webmap/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Full interactive map:</p>
+<iframe width="780" height="500" src="https://matthewlaw.xyz/green-London-map/" title="Web Map of Green London"></iframe>
+<p>(<a href="https://matthewlaw.xyz/green-London-map/">Fullscreen version here</a>)</p>
+<p>The map was made in QGIS with the ‘Generate XYZ Tiles’ tool and data from a few different sources:</p>
+<ul>
+<li><p>Forests, woods, and orchards from OpenStreetMap</p></li>
+<li><p>Street trees from the <a href="https://data.london.gov.uk/dataset/local-authority-maintained-trees">London Datastore</a></p></li>
+<li><p>Building outlines, roads, and place names from Ordnance Survey’s <a href="https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack">Open Zoomstack</a></p></li>
+<li><p>Greenspaces from Ordnance Survey’s <a href="https://www.ordnancesurvey.co.uk/business-government/products/open-map-greenspace">Open Greenspace</a></p></li>
+</ul>
+<p>The tree data also highlights the effect of the infamous tree ban in the London borough of Brent (shown below with a dotted outline):</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/green-London-webmap/images/paste-8B86746D.png" class="img-fluid"></p>
+
+
+
+ ]]></description>
+  <category>QGIS</category>
+  <category>30DayMapChallenge2021</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/green-London-webmap/index.html</guid>
+  <pubDate>Thu, 25 Nov 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/green-London-webmap/images/zooms.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>mapdeck Experiment</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A first experiment using <a href="https://symbolixau.github.io/mapdeck/index.html"><code>mapdeck</code></a>, an R wrapper for <a href="https://deck.gl">deck.gl</a> and <a href="https://www.mapbox.com/">Mapbox</a>, to create an interactive web map of a thoroughly urban chunk of Barcelona:</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/images/paste-307E0D0C.png" class="img-fluid"></p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/images/paste-B7AAF38C.png" class="img-fluid"></p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/images/paste-BA071FA6.png" class="img-fluid"></p>
+<p>Full interactive map:</p>
+<iframe width="780" height="500" src="https://matthewlaw.xyz/mapdeck-experiment/" title="`mapdeck` Experiment"></iframe>
+<section id="the-r-code-to-produce-the-map-is-available-here." class="level3">
+<h3 class="anchored" data-anchor-id="the-r-code-to-produce-the-map-is-available-here.">The R code to produce the map is available <a href="https://github.com/matthew-law/30DayMapChallenge2021/blob/main/urban/mapdeck.R">here</a>.</h3>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>30DayMapChallenge2021</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/index.html</guid>
+  <pubDate>Tue, 16 Nov 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/images/paste-B7AAF38C.png" medium="image" type="image/png" height="103" width="144"/>
+</item>
+<item>
+  <title>An attempt at mapping with Blender</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Seathwaite-blender/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Inspired by <a href="https://owenpowell.wordpress.com/30-day-map-challenge-2020/">Owen Powell’s excellent Blender creations</a> over the course of last year’s challenge, I had a go using Blender for the first time, mapping the area around Seathwaite Tarn in the Lake District.</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Seathwaite-blender/images/Seathwaite.png" class="img-fluid"></p>
+<p>I used 1m DTMs from <a href="https://environment.data.gov.uk/DefraDataDownload/">DEFRA</a> and <a href="https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack">OS Open Zoomstack</a> for the water and forest features.</p>
+
+
+
+ ]]></description>
+  <category>Blender</category>
+  <category>30DayMapChallenge2021</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Seathwaite-blender/index.html</guid>
+  <pubDate>Sun, 14 Nov 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Seathwaite-blender/images/Seathwaite.png" medium="image" type="image/png" height="106" width="144"/>
+</item>
+<item>
+  <title>Pigs Points</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/pigs-of-Europe/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/pigs-of-Europe/images/Pigs-of-Europe.png" class="img-fluid"></p>
+<p>For the ‘monochrome’ day of the #30DayMapChallenge I made a fairly simple univariate map: the number of pigs per thousand people, visualised with points: denser points = more pigs per capita. I got the data from <a href="https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=ef_lsk_gpig">Eurostat</a> (one of the mythical Brexit dividends is that since leaving the UE (and Eurostat) the UK is excluded from these kinds of map) via the <a href="https://ropengov.github.io/eurostat/">eurostat</a> R package.</p>
+<p>To link the point density to the pigs per person, I used the Expression String Builder in QGIS – I played around with this for a bit to get a satisfactory spread of density</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/pigs-of-Europe/images/pig-points.jpeg" class="img-fluid"></p>
+<p>One of the surprises of the Challenge was that this map highlighted the Spanish region of Aragon as the pig capital of Europe – I didn’t give this fact much thought when making the map but it subsequently found its way to Aragonese Twitter, and so for a few days my replies were filled with Spanish comments on the map.</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+</p><p><a href="https://twitter.com/hashtag/30DayMapChallenge?src=hash&amp;ref_src=twsrc%5Etfw">#30DayMapChallenge</a> Day 9: Monochrome<br>🐖 Pigs of Europe 🇪🇺 <a href="https://t.co/8E27dljpyk">pic.twitter.com/8E27dljpyk</a></p>
+<p></p>
+<p>— Matthew Law (<span class="citation" data-cites="Iawmatthew">@Iawmatthew</span>) <a href="https://twitter.com/Iawmatthew/status/1458202887562145792?ref_src=twsrc%5Etfw">November 9, 2021</a></p>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+ ]]></description>
+  <category>QGIS</category>
+  <category>30DayMapChallenge2021</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/pigs-of-Europe/index.html</guid>
+  <pubDate>Tue, 09 Nov 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/pigs-of-Europe/images/Pigs-of-Europe.png" medium="image" type="image/png" height="136" width="144"/>
+</item>
+<item>
+  <title>Road Grids of Southern Ontario</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/images/Road-Grids-Southern-Ontario.png" class="img-fluid"></p>
+<p>This map started with armchair travelling in Google Maps. I’d noticed that roads in the southern part of the Canadian province of Ontario were arranged in grids, but that there were a number of misaligned grids throughout the region:</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/images/Ontario-gmaps.jpeg" class="img-fluid"></p>
+<p>To define the area I looked at the different administrative boundaries (<code>admin_level</code> 5 and 6 in OSM) and from these picked the ones I thought delineated the ‘griddiest’ area (very scientific, I know). Initially I tried getting the data into QGIS with the QuickOSM plugin but found that because the features were quite large the query often timed out, so I switched to using <a href="https://overpass-turbo.eu/">overpass turbo</a>. I only wanted the roads which actually formed the grids (I know nothing of Canadian geography or history but Wikipedia leads me to believe these may be <a href="https://en.wikipedia.org/wiki/Concession_road">concession roads</a>): through trial and error I settled on including everything on OpenStreetMap tagged <code>highway=motorway</code>, <code>highway=trunk</code>, <code>highway=primary</code>, or <code>highway=secondary</code> within the area of interest.</p>
+<p>It was fun trying to reverse-engineer a methodology to try to get the different grid areas from just the roads – the basic Python methodology ended up being:</p>
+<ul>
+<li>use the roads and land outline to create enclosures (polygons bounded by roads/boundary of study area)</li>
+<li>calculate the orientation of eacch of these enclosures (technically, the orientation of the longest axis of their binding rectangles) using Martin Fleischmann’s excellent <a href="http://docs.momepy.org/en/stable/index.html"><code>momepy</code> package</a>, rounding these values to the nearest 5°</li>
+<li>define as ‘neighbours’ of each enclosure: all enclosures that border a given enclosure (ie its direct neighbours), all enclosures that border the enclosures that border a given enclosure (ie its neighbours’ neighbours), and all other enclosures within 15 km</li>
+<li>get the modal orientation value (the one calculated in step two) for each enclosure + its neighbours (as defined above)</li>
+</ul>
+<p>The full Python code used to make the map is available in a Jupyter notebook <a href="https://github.com/matthew-law/30DayMapChallenge2021/blob/main/grids/grids.ipynb">here</a>, albeit you’ll need to provide your own data to reproduce it. If you do get that far though, you can use the <code>.explore()</code> method in <code>geopandas</code> to interactively explore the data:</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/images/GDF.explore().jpeg" class="img-fluid"></p>
+<p>An interesting point of comparison is this figure from “The Land Surveys Of Ontario 1750–1980”, an article by Louis M. Sebert in a 1980 edition of the journal Cartographica (<a href="https://doi.org/10.3138/X1G3-5822-25G2-027M">doi: 10.3138/X1G3-5822-25G2-027M</a>) which gives a bit of insight into how the grids ended up this way:</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/images/Township-Survey-Systems.png" class="img-fluid"></p>
+
+
+
+ ]]></description>
+  <category>Python</category>
+  <category>30DayMapChallenge2021</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/index.html</guid>
+  <pubDate>Fri, 05 Nov 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/images/Road-Grids-Southern-Ontario.png" medium="image" type="image/png" height="143" width="144"/>
+</item>
+<item>
+  <title>Colouring by Numbers</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/UK-numbered-roads/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Whiling away the finite hours of my life reading Wikipedia, I came across a <a href="https://commons.wikimedia.org/wiki/File:United_Kingdom_A_road_zones.svg">map</a> purporting to show different regions for the UK’s numbered roads. Immediately I questioned its accuracy: I live firmly within the ‘1’ zone, and while it is true that most of my local numbered roads begin with 1 I’m also a frequent driver on the local A428, A505, and A603, so surely the regions mapped can’t be accurate. Naturally, the only course of action was to map out this hypothesis myself, using data from Ordnance Survey’s <a href="https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack">Open Zoomstack</a>. The answer is that the Wikipedia map is <em>mostly</em> accurate, although there is definitely some overlap:</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/UK-numbered-roads/UK numbered roads.jpeg" class="img-fluid"></p>
+<p>I used a symbology expression in QGIS to colour the roads by number:</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/UK-numbered-roads/colouring expression.jpeg" class="img-fluid"></p>
+<p>(I believe this is what the kids call a Hit Tweet)</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+</p><p><a href="https://twitter.com/hashtag/30DayMapChallenge?src=hash&amp;ref_src=twsrc%5Etfw">#30DayMapChallenge</a> Day 2: Lines<br><br>Great British roads, coloured by their numbers <a href="https://t.co/aT5Vp0W89a">pic.twitter.com/aT5Vp0W89a</a></p>
+<p></p>
+<p>— Matthew Law (<span class="citation" data-cites="Iawmatthew">@Iawmatthew</span>) <a href="https://twitter.com/Iawmatthew/status/1455619779402866699?ref_src=twsrc%5Etfw">November 2, 2021</a></p>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+ ]]></description>
+  <category>QGIS</category>
+  <category>30DayMapChallenge2021</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/UK-numbered-roads/index.html</guid>
+  <pubDate>Tue, 02 Nov 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/UK-numbered-roads/UK%20numbered%20roads.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>MSc Dissertation</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/MSc-dissertation/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="link-to-full-dissertation" class="level1">
+<h1><a href="https://matthewlaw.xyz/dissertation21/">Link to full dissertation</a></h1>
+<p>As part of the Geographic Data Science MSc I completed at the University of Liverpool, I wrote a dissertation, the catchily-named “Using Urban Morphology to Improve Housing Submarket Spatial Segmentation”.</p>
+<p>I typeset the dissertation in R Markdown, which meant I could easily export both <a href="https://matthewlaw.xyz/dissertation21/_main.pdf">pdf</a> and <a href="https://matthewlaw.xyz/dissertation21/">website</a> versions.</p>
+<p>In broad terms, the dissertation applies machine learning techniques to open data in order to partition a city into areas with different urban morphology. All of that was implemented in Python, relying on the <code>momepy</code> (‘Morphological Measuring in Python’) library developed by Martin Fleischmann, who supervised the dissertation along with Dani-Arribas Bel.</p>
+<section id="full-abstract" class="level3">
+<h3 class="anchored" data-anchor-id="full-abstract">Full abstract</h3>
+<p>Whenever geographic data are aggregated spatially, a decision must be made about the spatial unit into which individual data points are grouped. In analyses of the real estate market, properties are grouped in this way into housing submarkets: sections of the real estate market which share similar characteristics. Typically, existing spatial units (such as administrative neighbourhoods or districts) are used to represent these submarkets, however there is no guarantee that such units align with the housing market dynamics they seek to delineate. This dissertation presents a method to segment an urban area into different spatial units based on its built form – its urban morphology. The spatial segmentations produced are then assessed to determine whether they can be used to represent housing submarkets. Besides the novel segmentations themselves, the dissertation presents several methodological findings. Contextual characters and the transposition of cluster labels onto simpler geometries are shown to be key methods for ensuring spatially coherent segmentations. Segmentations are shown to significantly vary depending on the spatial units clustered to generate the segmentations (with regular grids performing significantly worse than units based on buildings), and on the clustering algorithm employed.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>academic</category>
+  <category>Python</category>
+  <category>R</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/MSc-dissertation/index.html</guid>
+  <pubDate>Tue, 14 Sep 2021 23:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/MSc-dissertation/cover.png" medium="image" type="image/png" height="204" width="144"/>
+</item>
+<item>
+  <title>Cambridge Greenbelt</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Cambridge-greenbelt/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A map of Cambridge’s greenbelt, mapped from one of the little rural enclaves with a view of said belt from my window.</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Cambridge-greenbelt/green.png" class="img-fluid"></p>
+<p><strong>Data</strong>: greenbelt via the (now former) <a href="https://data.gov.uk/dataset/f7f5e3a4-05a6-41f0-bc66-a36df6708fe0/dept-for-communities-and-local-government-inspire-ogc-wfs-service">Department for Communities and Local Government INSPIRE OGC WFS Service</a>, everything else from OS <a href="https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack">Open Zoomstack</a>. <strong>Tools</strong>: QGIS, making use of the ability to combine multiple symbologies (namely shapeburst, striped fill, and outline for the greenbelt itself).</p>
+
+
+
+ ]]></description>
+  <category>QGIS</category>
+  <category>30DayMapChallenge2020</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Cambridge-greenbelt/index.html</guid>
+  <pubDate>Sat, 07 Nov 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Cambridge-greenbelt/green.png" medium="image" type="image/png" height="153" width="144"/>
+</item>
+<item>
+  <title>Every Road in Great Britain</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>All of the roads in Great Britain, taken from Ordnance Survey’s <a href="https://www.ordnancesurvey.co.uk/business-government/products/open-zoomstack">Open Zoomstack</a> data and mapped in QGIS using colour blending to make areas with more roads whiter.</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/images/lines-GB.png" class="img-fluid"></p>
+<p>A closer view of of dense London:</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/images/lines-London.png" class="img-fluid"></p>
+<p>And a nice chunk of sparser Scotland by means of contrast:</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/images/lines-Scotland.png" class="img-fluid"></p>
+
+
+
+ ]]></description>
+  <category>QGIS</category>
+  <category>30DayMapChallenge2020</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/index.html</guid>
+  <pubDate>Mon, 02 Nov 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/images/lines-GB.png" medium="image" type="image/png" height="204" width="144"/>
+</item>
+</channel>
+</rss>

@@ -10,6 +10,7 @@ listing:
   fields: [image, title, categories]
   image-height: 17.5em
   image-placeholder: images/placeholder.png
+  feed: true
 page-layout: full
 title-block-banner: false
 ---
