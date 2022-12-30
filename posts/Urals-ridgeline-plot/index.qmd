@@ -1,0 +1,15 @@
+---
+title: "Making Ridgeline Plots in R"
+date: "2022-11-02"
+categories: [R]
+---
+
+A fairly simple 'map' showing the elevation of a section of the Ural Mountains, produced in R with the [`ggridges`](https://wilkelab.org/ggridges/) package.
+
+This kind of plot is often called a 'joy plot' after the [album cover](https://web.archive.org/web/20150425154607/http://blogs.scientificamerican.com/sa-visual/2015/02/18/pop-culture-pulsar-origin-story-of-joy-divisions-unknown-pleasures-album-cover-video/) of Joy Division's *Unknown Pleasures*, which my map wholeheartedly rips off.
+
+![](images/Urals%20ridgeline%20plot.png){fig-alt="A ridgeline plot of the Ural Mountains"}
+
+### The R code to produce the map is available [here](https://github.com/matthew-law/30DayMapChallenge2022/blob/main/lines/ridgeplot.R).
+
+The elevation data comes from [AWS Terrain Tiles](https://registry.opendata.aws/terrain-tiles/) and is accessed via `elevatr::get_elev_raster()`.

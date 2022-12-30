@@ -59,6 +59,30 @@
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Menan-Buttes-rayshader/images/Menan%20Buttes.png" medium="image" type="image/png"/>
 </item>
 <item>
+  <title>Making Ridgeline Plots in R</title>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Urals-ridgeline-plot/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A fairly simple ‘map’ showing the elevation of a section of the Ural Mountains, produced in R with the <a href="https://wilkelab.org/ggridges/"><code>ggridges</code></a> package.</p>
+<p>This kind of plot is often called a ‘joy plot’ after the <a href="https://web.archive.org/web/20150425154607/http://blogs.scientificamerican.com/sa-visual/2015/02/18/pop-culture-pulsar-origin-story-of-joy-divisions-unknown-pleasures-album-cover-video/">album cover</a> of Joy Division’s <em>Unknown Pleasures</em>, which my map wholeheartedly rips off.</p>
+<p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Urals-ridgeline-plot/images/Urals ridgeline plot.png" class="img-fluid" alt="A ridgeline plot of the Ural Mountains"></p>
+<section id="the-r-code-to-produce-the-map-is-available-here." class="level3">
+<h3 class="anchored" data-anchor-id="the-r-code-to-produce-the-map-is-available-here.">The R code to produce the map is available <a href="https://github.com/matthew-law/30DayMapChallenge2022/blob/main/lines/ridgeplot.R">here</a>.</h3>
+<p>The elevation data comes from <a href="https://registry.opendata.aws/terrain-tiles/">AWS Terrain Tiles</a> and is accessed via <code>elevatr::get_elev_raster()</code>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Urals-ridgeline-plot/index.html</guid>
+  <pubDate>Wed, 02 Nov 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Urals-ridgeline-plot/images/Urals%20ridgeline%20plot.png" medium="image" type="image/png"/>
+</item>
+<item>
   <title>Sinusoidal Map for The Projection Collection</title>
   <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/index.html</link>
   <description><![CDATA[ 
