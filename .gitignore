@@ -4,3 +4,6 @@
 .Rproj.user/
 .quarto/
 posts/.DS_Store
+/_site/
+.*
+!.gitignore
