@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/Cambridge-greenbelt/index.html",
+    "href": "posts/Cambridge-greenbelt/index.html",
+    "title": "Cambridge Greenbelt",
+    "section": "",
+    "text": "A map of Cambridge’s greenbelt, mapped from one of the little rural enclaves with a view of said belt from my window.\n\nData: greenbelt via the (now former) Department for Communities and Local Government INSPIRE OGC WFS Service, everything else from OS Open Zoomstack. Tools: QGIS, making use of the ability to combine multiple symbologies (namely shapeburst, striped fill, and outline for the greenbelt itself)."
+  },
+  {
+    "objectID": "posts/Rakaia-REM/index.html",
+    "href": "posts/Rakaia-REM/index.html",
+    "title": "Relative Elevation Model",
+    "section": "",
+    "text": "A first attempt at making a relative elevation model in QGIS, following excellent tutorials by Daniel Coe.\nFor those not in the know, a relative elevation model (REM) is basically a standard DEM, but normalised to the elevation of a river channel so the value of a given pixel gives the height of that point above the height of the nearest part of the river channel. Or so the theory goes – the creation of an REM in practice is as much of an art as a science and you can get quite different results depending on how you go about creating the REM.\n\nMade with 1m LiDAR-derived elevation data from Land Information New Zealand.\nIt’s interesting seeing the extent to which this kind of elevation data can reveal hydrological patterns that there’s no way of seeing when looking at aerial imagery:\n\nOriginal tweet thread here:\n\n\nMy first attempt at making a relative elevation model in QGIS, following excellent tutorials by @geo_coe 📍 Rakaia River 🇳🇿 https://t.co/yWM9IqeROd pic.twitter.com/IiBtZ0MpmO\n\n— Matthew Law (@Iawmatthew) February 3, 2022"
+  },
+  {
+    "objectID": "posts/Menan-Buttes-rayshader/index.html",
+    "href": "posts/Menan-Buttes-rayshader/index.html",
+    "title": "Menan Buttes mapped in rayshader",
+    "section": "",
+    "text": "A map of the Menan Buttes—a couple of volcanic cones in Idaho—mapped with the rayshader package in R.\n\n\nThe R code to produce the map is available here.\nThe elevation data comes from the USGS’s 3D Elevation Program via terrainr::get_tiles(), the river data comes from OpenStreetMap."
+  },
+  {
+    "objectID": "posts/Protestants-Catholics-USA/index.html",
+    "href": "posts/Protestants-Catholics-USA/index.html",
+    "title": "Bivariate Choropleth: Protestantism and Catholocism in the US",
+    "section": "",
+    "text": "Protestantism and Catholicism in the (contiguous) USA (sorry Alaska + Hawaii), mapped in QGIS as a bivariate choropleth map.\n\nThe nice legend was made with the bivariate legend plugin for QGIS.\nData at county level from the 2010 U.S. Religion Census Religious Congregations and Membership Study."
+  },
+  {
+    "objectID": "posts/green-London-webmap/index.html",
+    "href": "posts/green-London-webmap/index.html",
+    "title": "Web Map of Green London",
+    "section": "",
+    "text": "Full interactive map:\n\n(Fullscreen version here)\nThe map was made in QGIS with the ‘Generate XYZ Tiles’ tool and data from a few different sources:\n\nForests, woods, and orchards from OpenStreetMap\nStreet trees from the London Datastore\nBuilding outlines, roads, and place names from Ordnance Survey’s Open Zoomstack\nGreenspaces from Ordnance Survey’s Open Greenspace\n\nThe tree data also highlights the effect of the infamous tree ban in the London borough of Brent (shown below with a dotted outline):"
+  },
+  {
+    "objectID": "posts/Wollaton-Park/index.html",
+    "href": "posts/Wollaton-Park/index.html",
+    "title": "Wollaton Park Map",
+    "section": "",
+    "text": "A map of Wollaton Park in Nottingham – right click → Open Image in New Tab to have a look at all the details.\n\nThe primary inspiration for the map was the Environment Agency’s Vegetation Object Model data product, a raster where each pixel represents the top height of the canopy for all vegetation taller than 2.5 metres. I wanted to map somewhere with the right scale and mixture of vegetation coverage to nicely showcase the data, and Wollaton Park seemed to provide this.\nThe VOM does come with a prerendered hillshade layer, but I wanted to have a bit more control over this, so used the rayshader package in R to generate my own – R code to do so available here! This meant that I could choose my own angle for the shadows (meaning it wouldn’t look off when I rotated the map), and mix in a layer with subtle ambient lighting. The code includes a function to save the array that rayshader generates to a projected geotiff I could drag/drop into QGIS and have appear in the right place (harder than I thought it would have been, although I wouldn’t be surprised if I missed an easier way to achieve the same thing) so do steal that function if you ever need such a thing!\nThe contour lines were generated from a lidar composite DTM from Defra, and the rest of the data came from OpenStreetMap (I particularly like the individually mapped golf fairways and greens, although looking at it now I think the colours I chose are too subtle).\nEverything was put together in QGIS, using geometry generator expressions to smooth the contours and generate waterlines for the lake, label masks for the labelling of both of these, and lots of use of the different layer blending modes to combine the various vegetation colour/shadow layers."
+  },
+  {
     "objectID": "posts/Seathwaite-blender/index.html",
     "href": "posts/Seathwaite-blender/index.html",
     "title": "An attempt at mapping with Blender",
@@ -14,11 +63,11 @@
     "text": "This map started with armchair travelling in Google Maps. I’d noticed that roads in the southern part of the Canadian province of Ontario were arranged in grids, but that there were a number of misaligned grids throughout the region:\n\nTo define the area I looked at the different administrative boundaries (admin_level 5 and 6 in OSM) and from these picked the ones I thought delineated the ‘griddiest’ area (very scientific, I know). Initially I tried getting the data into QGIS with the QuickOSM plugin but found that because the features were quite large the query often timed out, so I switched to using overpass turbo. I only wanted the roads which actually formed the grids (I know nothing of Canadian geography or history but Wikipedia leads me to believe these may be concession roads): through trial and error I settled on including everything on OpenStreetMap tagged highway=motorway, highway=trunk, highway=primary, or highway=secondary within the area of interest.\nIt was fun trying to reverse-engineer a methodology to try to get the different grid areas from just the roads – the basic Python methodology ended up being:\n\nuse the roads and land outline to create enclosures (polygons bounded by roads/boundary of study area)\ncalculate the orientation of eacch of these enclosures (technically, the orientation of the longest axis of their binding rectangles) using Martin Fleischmann’s excellent momepy package, rounding these values to the nearest 5°\ndefine as ‘neighbours’ of each enclosure: all enclosures that border a given enclosure (ie its direct neighbours), all enclosures that border the enclosures that border a given enclosure (ie its neighbours’ neighbours), and all other enclosures within 15 km\nget the modal orientation value (the one calculated in step two) for each enclosure + its neighbours (as defined above)\n\nThe full Python code used to make the map is available in a Jupyter notebook here, albeit you’ll need to provide your own data to reproduce it. If you do get that far though, you can use the .explore() method in geopandas to interactively explore the data:\n\nAn interesting point of comparison is this figure from “The Land Surveys Of Ontario 1750–1980”, an article by Louis M. Sebert in a 1980 edition of the journal Cartographica (doi: 10.3138/X1G3-5822-25G2-027M) which gives a bit of insight into how the grids ended up this way:"
   },
   {
-    "objectID": "posts/green-London-webmap/index.html",
-    "href": "posts/green-London-webmap/index.html",
-    "title": "Web Map of Green London",
+    "objectID": "posts/Urals-ridgeline-plot/index.html",
+    "href": "posts/Urals-ridgeline-plot/index.html",
+    "title": "Making Ridgeline Plots in R",
     "section": "",
-    "text": "Full interactive map:\n\n(Fullscreen version here)\nThe map was made in QGIS with the ‘Generate XYZ Tiles’ tool and data from a few different sources:\n\nForests, woods, and orchards from OpenStreetMap\nStreet trees from the London Datastore\nBuilding outlines, roads, and place names from Ordnance Survey’s Open Zoomstack\nGreenspaces from Ordnance Survey’s Open Greenspace\n\nThe tree data also highlights the effect of the infamous tree ban in the London borough of Brent (shown below with a dotted outline):"
+    "text": "A fairly simple ‘map’ showing the elevation of a section of the Ural Mountains, produced in R with the ggridges package.\nThis kind of plot is often called a ‘joy plot’ after the album cover of Joy Division’s Unknown Pleasures, which my map wholeheartedly rips off.\n\n\nThe R code to produce the map is available here.\nThe elevation data comes from AWS Terrain Tiles and is accessed via elevatr::get_elev_raster()."
   },
   {
     "objectID": "posts/mapdeck-experiment/index.html",
@@ -28,25 +77,11 @@
     "text": "A first experiment using mapdeck, an R wrapper for deck.gl and Mapbox, to create an interactive web map of a thoroughly urban chunk of Barcelona:\n\n\n\nFull interactive map:\n\n\nThe R code to produce the map is available here."
   },
   {
-    "objectID": "posts/Protestants-Catholics-USA/index.html",
-    "href": "posts/Protestants-Catholics-USA/index.html",
-    "title": "Bivariate Choropleth: Protestantism and Catholocism in the US",
-    "section": "",
-    "text": "Protestantism and Catholicism in the (contiguous) USA (sorry Alaska + Hawaii), mapped in QGIS as a bivariate choropleth map.\n\nThe nice legend was made with the bivariate legend plugin for QGIS.\nData at county level from the 2010 U.S. Religion Census Religious Congregations and Membership Study."
-  },
-  {
     "objectID": "posts/MSc-dissertation/index.html",
     "href": "posts/MSc-dissertation/index.html",
     "title": "MSc Dissertation",
     "section": "",
     "text": "Link to full dissertation\nAs part of the Geographic Data Science MSc I completed at the University of Liverpool, I wrote a dissertation, the catchily-named “Using Urban Morphology to Improve Housing Submarket Spatial Segmentation”.\nI typeset the dissertation in R Markdown, which meant I could easily export both pdf and website versions.\nIn broad terms, the dissertation applies machine learning techniques to open data in order to partition a city into areas with different urban morphology. All of that was implemented in Python, relying on the momepy (‘Morphological Measuring in Python’) library developed by Martin Fleischmann, who supervised the dissertation along with Dani-Arribas Bel.\n\nFull abstract\nWhenever geographic data are aggregated spatially, a decision must be made about the spatial unit into which individual data points are grouped. In analyses of the real estate market, properties are grouped in this way into housing submarkets: sections of the real estate market which share similar characteristics. Typically, existing spatial units (such as administrative neighbourhoods or districts) are used to represent these submarkets, however there is no guarantee that such units align with the housing market dynamics they seek to delineate. This dissertation presents a method to segment an urban area into different spatial units based on its built form – its urban morphology. The spatial segmentations produced are then assessed to determine whether they can be used to represent housing submarkets. Besides the novel segmentations themselves, the dissertation presents several methodological findings. Contextual characters and the transposition of cluster labels onto simpler geometries are shown to be key methods for ensuring spatially coherent segmentations. Segmentations are shown to significantly vary depending on the spatial units clustered to generate the segmentations (with regular grids performing significantly worse than units based on buildings), and on the clustering algorithm employed."
-  },
-  {
-    "objectID": "posts/Menan-Buttes-rayshader/index.html",
-    "href": "posts/Menan-Buttes-rayshader/index.html",
-    "title": "Menan Buttes mapped in rayshader",
-    "section": "",
-    "text": "A map of the Menan Buttes—a couple of volcanic cones in Idaho—mapped with the rayshader package in R.\n\n\nThe R code to produce the map is available here.\nThe elevation data comes from the USGS’s 3D Elevation Program via terrainr::get_tiles(), the river data comes from OpenStreetMap."
   },
   {
     "objectID": "posts/projection-collection-sinusoidal/index.html",
@@ -70,13 +105,6 @@
     "text": "All of the roads in Great Britain, taken from Ordnance Survey’s Open Zoomstack data and mapped in QGIS using colour blending to make areas with more roads whiter.\n\nA closer view of of dense London:\n\nAnd a nice chunk of sparser Scotland by means of contrast:"
   },
   {
-    "objectID": "posts/Rakaia-REM/index.html",
-    "href": "posts/Rakaia-REM/index.html",
-    "title": "Relative Elevation Model",
-    "section": "",
-    "text": "A first attempt at making a relative elevation model in QGIS, following excellent tutorials by Daniel Coe.\nFor those not in the know, a relative elevation model (REM) is basically a standard DEM, but normalised to the elevation of a river channel so the value of a given pixel gives the height of that point above the height of the nearest part of the river channel. Or so the theory goes – the creation of an REM in practice is as much of an art as a science and you can get quite different results depending on how you go about creating the REM.\n\nMade with 1m LiDAR-derived elevation data from Land Information New Zealand.\nIt’s interesting seeing the extent to which this kind of elevation data can reveal hydrological patterns that there’s no way of seeing when looking at aerial imagery:\n\nOriginal tweet thread here:\n\n\nMy first attempt at making a relative elevation model in QGIS, following excellent tutorials by @geo_coe 📍 Rakaia River 🇳🇿 https://t.co/yWM9IqeROd pic.twitter.com/IiBtZ0MpmO\n\n— Matthew Law (@Iawmatthew) February 3, 2022"
-  },
-  {
     "objectID": "posts/pigs-of-Europe/index.html",
     "href": "posts/pigs-of-Europe/index.html",
     "title": "Pigs Points",
@@ -84,38 +112,10 @@
     "text": "For the ‘monochrome’ day of the #30DayMapChallenge I made a fairly simple univariate map: the number of pigs per thousand people, visualised with points: denser points = more pigs per capita. I got the data from Eurostat (one of the mythical Brexit dividends is that since leaving the UE (and Eurostat) the UK is excluded from these kinds of map) via the eurostat R package.\nTo link the point density to the pigs per person, I used the Expression String Builder in QGIS – I played around with this for a bit to get a satisfactory spread of density\n\nOne of the surprises of the Challenge was that this map highlighted the Spanish region of Aragon as the pig capital of Europe – I didn’t give this fact much thought when making the map but it subsequently found its way to Aragonese Twitter, and so for a few days my replies were filled with Spanish comments on the map.\n\n\n#30DayMapChallenge Day 9: Monochrome🐖 Pigs of Europe 🇪🇺 pic.twitter.com/8E27dljpyk\n\n— Matthew Law (@Iawmatthew) November 9, 2021"
   },
   {
-    "objectID": "posts/Cambridge-greenbelt/index.html",
-    "href": "posts/Cambridge-greenbelt/index.html",
-    "title": "Cambridge Greenbelt",
-    "section": "",
-    "text": "A map of Cambridge’s greenbelt, mapped from one of the little rural enclaves with a view of said belt from my window.\n\nData: greenbelt via the (now former) Department for Communities and Local Government INSPIRE OGC WFS Service, everything else from OS Open Zoomstack. Tools: QGIS, making use of the ability to combine multiple symbologies (namely shapeburst, striped fill, and outline for the greenbelt itself)."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "A Few Things I’ve Made",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nWollaton Park Map\n\n\n\nQGIS\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMenan Buttes mapped in rayshader\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaking Ridgeline Plots in R\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSinusoidal Map for The Projection Collection\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRelative Elevation Model\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBivariate Choropleth: Protestantism and Catholocism in the US\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeb Map of Green London\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmapdeck Experiment\n\n\n\nR\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAn attempt at mapping with Blender\n\n\n\nBlender\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPigs Points\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoad Grids of Southern Ontario\n\n\n\nPython\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColouring by Numbers\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMSc Dissertation\n\n\n\nacademic\n\n\nPython\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCambridge Greenbelt\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery Road in Great Britain\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "posts/Wollaton-Park/index.html",
-    "href": "posts/Wollaton-Park/index.html",
-    "title": "Wollaton Park Map",
-    "section": "",
-    "text": "A map of Wollaton Park in Nottingham – right click → Open Image in New Tab to have a look at all the details.\n\nThe primary inspiration for the map was the Environment Agency’s Vegetation Object Model data product, a raster where each pixel represents the top height of the canopy for all vegetation taller than 2.5 metres. I wanted to map somewhere with the right scale and mixture of vegetation coverage to nicely showcase the data, and Wollaton Park seemed to provide this.\nThe VOM does come with a prerendered hillshade layer, but I wanted to have a bit more control over this, so used the rayshader package in R to generate my own – R code to do so available here! This meant that I could choose my own angle for the shadows (meaning it wouldn’t look off when I rotated the map), and mix in a layer with subtle ambient lighting. The code includes a function to save the array that rayshader generates to a projected geotiff I could drag/drop into QGIS and have appear in the right place (harder than I thought it would have been, although I wouldn’t be surprised if I missed an easier way to achieve the same thing) so do steal that function if you ever need such a thing!\nThe contour lines were generated from a lidar composite DTM from Defra, and the rest of the data came from OpenStreetMap (I particularly like the individually mapped golf fairways and greens, although looking at it now I think the colours I chose are too subtle).\nEverything was put together in QGIS, using geometry generator expressions to smooth the contours and generate waterlines for the lake, label masks for the labelling of both of these, and lots of use of the different layer blending modes to combine the various vegetation colour/shadow layers."
-  },
-  {
-    "objectID": "posts/Urals-ridgeline-plot/index.html",
-    "href": "posts/Urals-ridgeline-plot/index.html",
-    "title": "Making Ridgeline Plots in R",
-    "section": "",
-    "text": "A fairly simple ‘map’ showing the elevation of a section of the Ural Mountains, produced in R with the ggridges package.\nThis kind of plot is often called a ‘joy plot’ after the album cover of Joy Division’s Unknown Pleasures, which my map wholeheartedly rips off.\n\n\nThe R code to produce the map is available here.\nThe elevation data comes from AWS Terrain Tiles and is accessed via elevatr::get_elev_raster()."
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nWollaton Park Map\n\n\n\nQGIS\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\nMenan Buttes mapped in rayshader\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\nMaking Ridgeline Plots in R\n\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSinusoidal Map for The Projection Collection\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\nRelative Elevation Model\n\n\n\nQGIS\n\n\n\n\n\n\n\n\n\n\n\n\nBivariate Choropleth: Protestantism and Catholocism in the US\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeb Map of Green London\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmapdeck Experiment\n\n\n\nR\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\nAn attempt at mapping with Blender\n\n\n\nBlender\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\nPigs Points\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\nRoad Grids of Southern Ontario\n\n\n\nPython\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\nColouring by Numbers\n\n\n\nQGIS\n\n\n30DayMapChallenge2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMSc Dissertation\n\n\n\nacademic\n\n\nPython\n\n\nR\n\n\n\n\n\n\n\n\n\n\n\n\nCambridge Greenbelt\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\n\n\n\n\nEvery Road in Great Britain\n\n\n\nQGIS\n\n\n30DayMapChallenge2020\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

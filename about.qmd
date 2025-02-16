@@ -4,9 +4,9 @@ image: profile.jpg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/Iawmatthew
+    - icon: "{{< iconify fa6-brands:bluesky size=2em title='Bluesky'>}}"
+      text: Bluesky
+      href: https://bsky.app/profile/matthewlaw.xyz
     - icon: mastodon
       text: Mastodon
       href: https://mapstodon.space/@MatthewLaw

@@ -19,9 +19,9 @@ website:
       - icon: github
         href: https://github.com/matthew-law
         aria-label: GitHub
-      - icon: twitter
-        href: https://twitter.com/Iawmatthew
-        aria-label: Twitter
+      - text: "{{< iconify fa6-brands:bluesky title='Bluesky'>}}"
+        href: https://bsky.app/profile/matthewlaw.xyz
+        aria-label: Bluesky
       - icon: mastodon
         href: https://mapstodon.space/@MatthewLaw
         aria-label: Mastodon

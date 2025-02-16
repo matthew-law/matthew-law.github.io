@@ -6,15 +6,16 @@
       version="2.0">
 <channel>
 <title>Matthew Law</title>
-<link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.html</link>
+<link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/</link>
 <atom:link href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/index.xml" rel="self" type="application/rss+xml"/>
 <description>Map enthusiast</description>
-<generator>quarto-1.2.269</generator>
+<generator>quarto-1.6.40</generator>
 <lastBuildDate>Thu, 29 Dec 2022 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Wollaton Park Map</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Wollaton-Park/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Wollaton-Park/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -31,14 +32,14 @@
  ]]></description>
   <category>QGIS</category>
   <category>R</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Wollaton-Park/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Wollaton-Park/</guid>
   <pubDate>Thu, 29 Dec 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Wollaton-Park/images/Wollaton%20Park.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Menan Buttes mapped in rayshader</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Menan-Buttes-rayshader/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Menan-Buttes-rayshader/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -54,14 +55,14 @@
 
  ]]></description>
   <category>R</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Menan-Buttes-rayshader/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Menan-Buttes-rayshader/</guid>
   <pubDate>Mon, 07 Nov 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Menan-Buttes-rayshader/images/Menan%20Buttes.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Making Ridgeline Plots in R</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Urals-ridgeline-plot/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Urals-ridgeline-plot/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -78,14 +79,14 @@
 
  ]]></description>
   <category>R</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Urals-ridgeline-plot/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Urals-ridgeline-plot/</guid>
   <pubDate>Wed, 02 Nov 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Urals-ridgeline-plot/images/Urals%20ridgeline%20plot.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Sinusoidal Map for The Projection Collection</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -97,7 +98,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/images/cards.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">I spy my map!</figcaption><p></p>
+<figcaption>I spy my map!</figcaption>
 </figure>
 </div>
 
@@ -105,14 +106,15 @@
 
  ]]></description>
   <category>QGIS</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/</guid>
   <pubDate>Tue, 07 Jun 2022 23:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/projection-collection-sinusoidal/images/54 - Sinusoidal Law.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 <item>
   <title>Relative Elevation Model</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Rakaia-REM/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Rakaia-REM/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -136,14 +138,14 @@
 
  ]]></description>
   <category>QGIS</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Rakaia-REM/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Rakaia-REM/</guid>
   <pubDate>Thu, 03 Feb 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Rakaia-REM/thumbnail.png" medium="image" type="image/png" height="100" width="144"/>
 </item>
 <item>
   <title>Bivariate Choropleth: Protestantism and Catholocism in the US</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Protestants-Catholics-USA/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Protestants-Catholics-USA/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -158,14 +160,14 @@
  ]]></description>
   <category>QGIS</category>
   <category>30DayMapChallenge2021</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Protestants-Catholics-USA/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Protestants-Catholics-USA/</guid>
   <pubDate>Fri, 26 Nov 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Protestants-Catholics-USA/images/Protestantism-Catholicism.png" medium="image" type="image/png" height="102" width="144"/>
 </item>
 <item>
   <title>Web Map of Green London</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/green-London-webmap/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/green-London-webmap/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -188,14 +190,15 @@
  ]]></description>
   <category>QGIS</category>
   <category>30DayMapChallenge2021</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/green-London-webmap/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/green-London-webmap/</guid>
   <pubDate>Thu, 25 Nov 2021 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/green-London-webmap/images/zooms.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>mapdeck Experiment</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -215,14 +218,15 @@
  ]]></description>
   <category>R</category>
   <category>30DayMapChallenge2021</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/</guid>
   <pubDate>Tue, 16 Nov 2021 00:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/mapdeck-experiment/images/paste-B7AAF38C.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 <item>
   <title>An attempt at mapping with Blender</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Seathwaite-blender/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Seathwaite-blender/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -236,14 +240,14 @@
  ]]></description>
   <category>Blender</category>
   <category>30DayMapChallenge2021</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Seathwaite-blender/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Seathwaite-blender/</guid>
   <pubDate>Sun, 14 Nov 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Seathwaite-blender/images/Seathwaite.png" medium="image" type="image/png" height="106" width="144"/>
 </item>
 <item>
   <title>Pigs Points</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/pigs-of-Europe/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/pigs-of-Europe/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -266,14 +270,14 @@
  ]]></description>
   <category>QGIS</category>
   <category>30DayMapChallenge2021</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/pigs-of-Europe/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/pigs-of-Europe/</guid>
   <pubDate>Tue, 09 Nov 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/pigs-of-Europe/images/Pigs-of-Europe.png" medium="image" type="image/png" height="136" width="144"/>
 </item>
 <item>
   <title>Road Grids of Southern Ontario</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -299,14 +303,14 @@
  ]]></description>
   <category>Python</category>
   <category>30DayMapChallenge2021</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/</guid>
   <pubDate>Fri, 05 Nov 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Ontario-grids/images/Road-Grids-Southern-Ontario.png" medium="image" type="image/png" height="143" width="144"/>
 </item>
 <item>
   <title>Colouring by Numbers</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/UK-numbered-roads/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/UK-numbered-roads/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -329,14 +333,14 @@
  ]]></description>
   <category>QGIS</category>
   <category>30DayMapChallenge2021</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/UK-numbered-roads/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/UK-numbered-roads/</guid>
   <pubDate>Tue, 02 Nov 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/UK-numbered-roads/UK%20numbered%20roads.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>MSc Dissertation</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/MSc-dissertation/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/MSc-dissertation/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -358,14 +362,15 @@
   <category>academic</category>
   <category>Python</category>
   <category>R</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/MSc-dissertation/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/MSc-dissertation/</guid>
   <pubDate>Tue, 14 Sep 2021 23:00:00 GMT</pubDate>
   <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/MSc-dissertation/cover.png" medium="image" type="image/png" height="204" width="144"/>
 </item>
 <item>
   <title>Cambridge Greenbelt</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Cambridge-greenbelt/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Cambridge-greenbelt/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -379,14 +384,14 @@
  ]]></description>
   <category>QGIS</category>
   <category>30DayMapChallenge2020</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Cambridge-greenbelt/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Cambridge-greenbelt/</guid>
   <pubDate>Sat, 07 Nov 2020 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/Cambridge-greenbelt/green.png" medium="image" type="image/png" height="153" width="144"/>
 </item>
 <item>
   <title>Every Road in Great Britain</title>
-  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/index.html</link>
+  <link>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -403,9 +408,8 @@
  ]]></description>
   <category>QGIS</category>
   <category>30DayMapChallenge2020</category>
-  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/index.html</guid>
+  <guid>https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/</guid>
   <pubDate>Mon, 02 Nov 2020 00:00:00 GMT</pubDate>
-  <media:content url="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/GB-roads/images/lines-GB.png" medium="image" type="image/png" height="204" width="144"/>
 </item>
 </channel>
 </rss>
